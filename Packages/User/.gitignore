@@ -13,3 +13,5 @@ Color Highlighter/
 *.cache/
 
 .DS_Store
+
+*.sublime-workspace
