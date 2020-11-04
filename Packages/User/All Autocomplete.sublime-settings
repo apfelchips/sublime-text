@@ -1,0 +1,6 @@
+{
+    "exclude_from_completion": [
+        "text",
+        "source - (comment, string.quoted)"
+    ]
+}

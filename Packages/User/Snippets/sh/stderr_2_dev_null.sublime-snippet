@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+2>/dev/null
+]]></content>
+	<tabTrigger>2</tabTrigger>
+	<scope>source.shell</scope>
+	<description>2&gt;/dev/null</description>
+</snippet>

@@ -1,0 +1,29 @@
+{
+	"extensions":
+	[
+		"bashrc",
+		"inputrc",
+		"vimrc",
+		"zshrc",
+		"tcsh",
+		"zlogin",
+		"zpreztorc",
+		".zpreztorc",
+		".Brewfile",
+		".bashrc-platform",
+		".env",
+		".inputrc",
+		".gitmessage",
+		".zshenv",
+		".zprofile",
+		"updater-script",
+		".zshrc",
+		".zlogin",
+		".zlogout",
+		".taskrc",
+		".profile-platform",
+		".profile-local",
+		"latexmkrc",
+		".environment"
+	]
+}

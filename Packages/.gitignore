@@ -1,0 +1,11 @@
+/**
+!.gitignore
+
+!User/
+!User/**
+
+#Sublime defaults overrides
+!Default/
+!Default/**
+
+.DS_Store

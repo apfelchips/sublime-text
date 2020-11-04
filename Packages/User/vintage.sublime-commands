@@ -1,0 +1,40 @@
+ [ // VI : commands
+    {
+        "caption": ":x - Save and Close",
+        "command": "chain",
+        "args":
+        {
+            "commands": [
+                ["save"],
+                ["close_file"]
+            ]
+        }
+    },
+
+    {
+        "caption": ":q - close window",
+        "command": "close_window"
+    },
+
+    {
+        "caption": ":w - Save",
+        "command": "save"
+    },
+
+    {
+        "caption": ":e - Revert",
+        "command": "revert"
+    },
+
+    {
+        "caption": ":0 - BOF",
+        "command": "move_to",
+        "args": {"to": "bof"}
+    },
+
+    {
+        "caption": ":$ - EOF",
+        "command": "move_to",
+        "args": {"to": "eof"}
+    }
+]

@@ -1,0 +1,23 @@
+{
+    "target":
+    {
+        "exec":
+        {
+            "File": "$packages/User/exec_without_opening_panel.py"
+        }
+    },
+    // https://www.sublimetext.com/docs/3/scope_naming.html
+    "selector": "text.html.basic, text.html, text.plain",
+    "osx":
+    {
+        "cmd": ["open", "-a", "/Applications/Firefox.app", "$file"]
+    },
+    "linux":
+    {
+        "cmd": ["xdg-open", "$file"]
+    },
+     "windows":
+    {
+        "cmd": ["cmd.exe","/C","","C:\\PROGRA~1\\MOZILL~1\\firefox.exe", "$file"]
+    }
+}

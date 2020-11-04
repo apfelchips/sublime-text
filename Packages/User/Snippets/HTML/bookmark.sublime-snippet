@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[dt><a href="$1" tags="$2">$3</a></dt>]]></content>
+    <tabTrigger>dt</tabTrigger>
+    <description>HTML - bookmark.html</description>
+    <scope>text.html</scope>
+</snippet>

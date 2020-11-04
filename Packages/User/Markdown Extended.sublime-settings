@@ -1,0 +1,11 @@
+{
+    "extensions":
+    [
+        "md",
+        "mmd",
+        "rmd",
+        "markdown",
+        "mark"
+    ],
+    "trim_trailing_white_space_on_save": false
+}

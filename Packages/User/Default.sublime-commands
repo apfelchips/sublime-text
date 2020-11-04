@@ -1,0 +1,78 @@
+[
+    // http://docs.sublimetext.info/en/latest/customization/key_bindings.html
+    // http://docs.sublimetext.info/en/latest/reference/commands.html
+    // examples: https://github.com/fjl/Sublime-Missing-Palette-Commands/blob/st3/Missing.sublime-commands
+    //
+    // show executed commands: sublime.log_commands(True);
+
+    // Define your custom Sublime commands here
+    // Format is same as `key bindings` except replace `keys` with `caption`
+    // {
+    //     // Name to show in Command Palette
+    //     "caption": "File: New",
+    //     // Command to invoke
+    //     "command": "new_file",
+    //     // Optional keyword arguments to provide to command
+    //     "args": {"key": "value"}
+    // }
+    // extra command can be added to Command Palette as
+    //
+    {
+        "caption":"Debugging: Log Commands",
+        "command": "sublime.log_commands(True)"
+    },
+    {
+        "caption":"Debugging: Log Inputs",
+        "command": "sublime.log_input(True)"
+    },
+    {
+        "caption":"Debugging: Log RegEx",
+        "command": "sublime.log_result_regex(True)"
+    },
+    {
+        "caption": "Terminus: Open iPython",
+        "command": "terminus_open",
+        "args":
+        {
+            "cmd": ["ipython"],
+            "cwd": "${file_path:${project}}",
+            "title": "iPython"
+        }
+    },
+
+    {// FileDiff extension
+        "caption": "Diff current with saved",
+        "command": "file_diff_saved"
+    },
+    {// FileDiff extension
+        "caption": "Diff current with other file in project",
+        "command": "file_diff_file"
+    },
+
+    {
+        "caption": "Open corresponding Header/Source File",
+        "command": "switch_file_deluxe",
+        "args":
+        {
+            "extensions": [".cpp", ".cxx", ".cc", ".c", "Qt.cpp", "Qt.h", ".hpp", ".hxx", ".h", "_p.h", "_p_p.h", ".ipp", ".inl", ".m", ".mm"],
+            "paths": ["../impl", "../include"]
+        }
+    },
+
+
+    // {
+    //     "caption": "Open: Notes",
+    //     "command": "open_project",
+    //     "args":
+    //     {
+    //         "cmd": "~/notes/notes.sublime-project"
+    //     }
+    // },
+
+    {
+        "caption": "Open Recent Project",
+        "command": "prompt_select_workspace",
+        "args":
+        {}
+    }
+]

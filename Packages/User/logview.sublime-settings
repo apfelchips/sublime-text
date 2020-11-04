@@ -1,0 +1,9 @@
+{
+	"extensions":
+	[
+		"log"
+	],
+    "error_filter": "error|fail|exception|fatal",
+    "warning_filter": "warn(ing)?|not found|defer(ed)?",
+    "highlight_style": "fill"
+}

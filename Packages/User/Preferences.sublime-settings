@@ -1,0 +1,146 @@
+{
+	"auto_complete_selector": "source - (comment, string.quoted)",
+	"auto_complete_size_limit": 4194304,
+	"auto_complete_triggers":
+	[
+		{
+			"characters": "<",
+			"selector": "text.html, text.xml"
+		},
+		{
+			"characters": "\\",
+			"selector": "text.tex.latex"
+		}
+	],
+	"auto_find_in_selection": true,
+	"auto_match_enabled": false,
+	"binary_file_patterns":
+	[
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tiff",
+		"*.webp",
+		"*.webm",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.odt",
+		"*.doc",
+		"*.swf",
+		"*.jar",
+		"*.apk",
+		"*.zip",
+		"*.rar",
+		"*.7z",
+		"*.tar",
+		"*.gz",
+		"*.part",
+		"*.m4a",
+		"*.m4b",
+		"*.mp3",
+		"*.ogg",
+		"*.aac",
+		"*.zwc",
+		"*.iso",
+		"*.img",
+		"*.dmg",
+		"*.psd",
+		"*.db",
+		"*.sqlite"
+	],
+	"close_windows_when_empty": true,
+	"default_line_ending": "unix",
+	"dictionary": "Packages/Dictionaries/German.dic",
+	"ensure_newline_at_eof_on_save": true,
+	"fade_fold_buttons": false,
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.sublime-workspace"
+	],
+	"find_selected_text": false,
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		".Trash",
+		"nbproject",
+		".vscode",
+		".Spotlight-V100",
+		".fseventd",
+		"__pycache__",
+		"cache"
+	],
+	"font_face": "Menlo Regular for Powerline",
+	"font_size": 13,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"All Autocomplete",
+		"InsertDate",
+		"JsPrettier",
+		"LiveReload",
+		"MarkdownPreview",
+		"PlainTasks",
+		"rainbow_csv",
+		"SublimeLinter",
+		"SublimeLinter-chktex",
+		"SublimeLinter-contrib-bashate",
+		"SublimeLinter-contrib-markdownlint",
+		"SublimeLinter-csslint",
+		"SublimeLinter-eslint",
+		"SublimeLinter-json",
+		"SublimeLinter-php",
+		"SublimeLinter-phpcs",
+		"SublimeLinter-xmllint",
+		"Vagrant",
+		"Vintage"
+	],
+	"indent_to_bracket": true,
+	"index_exclude_patterns":
+	[
+		"*cache/*",
+		"*/.npm/*",
+		"*.noindex/*",
+		"*/*.app/*",
+		"*.cache",
+		"*.rcache",
+		"*.log"
+	],
+	"jsoncomma_on_save": true,
+	"rulers":
+	[
+		80,
+		120
+	],
+	"show_encoding": true,
+	"show_full_path": true,
+	"show_line_endings": true,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"vintage_use_clipboard": true,
+	"word_wrap": "false"
+}

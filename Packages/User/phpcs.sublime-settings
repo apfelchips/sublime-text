@@ -1,0 +1,6 @@
+{
+    "phpcs_executable_path": "~/bin/PHP_CodeSniffer/bin/phpcs.bat",
+    "phpcbf_executable_path": "~/bin/PHP_CodeSniffer/bin/phpcbf.bat",
+    "php_cs_fixer_executable_path": "~/AppData/Roaming/Composer/vendor/bin/php-cs-fixer.bat",
+    "phpcs_show_errors_on_save": false
+}

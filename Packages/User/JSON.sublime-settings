@@ -1,0 +1,13 @@
+{
+	"extensions":
+	[
+		".babelrc",
+		".eslintignore",
+		"lock",
+		".eslintrc",
+		".arcconfig",
+		"bttpreset",
+		"sublime-build"
+	],
+	"word_wrap": "false"
+}

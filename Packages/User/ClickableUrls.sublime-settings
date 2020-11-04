@@ -1,0 +1,5 @@
+{
+    "highlight_urls": true,
+    "max_url_limit": 1000
+    //"clickable_urls_browser": "firefox"
+}

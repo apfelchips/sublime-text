@@ -1,0 +1,6 @@
+{
+    // https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior
+    "format": "%Y-%m-%dT%M:%S",
+	"tz_in": "Europe/Berlin",
+    "silence_timezone_request": true
+}

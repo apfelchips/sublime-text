@@ -1,0 +1,9 @@
+{
+	"extensions":
+	[
+		".stsyncedignore",
+		".stignore",
+		".gitignore_global",
+		".gitignore"
+	]
+}

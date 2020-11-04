@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[Mit freundlichen Grüßen
+
+]]></content>
+	<tabTrigger>mfg</tabTrigger>
+	<description>MfG</description>
+	<scope>text</scope>
+</snippet>

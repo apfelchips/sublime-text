@@ -1,0 +1,6 @@
+<snippet>
+  <content><![CDATA[![${1:Alt text}](${2:./img.jpg})]]></content>
+  <tabTrigger>!</tabTrigger>
+  <scope>text.html.markdown.multimarkdown, text.html.markdown</scope>
+  <description>Markdown Image</description>
+</snippet>

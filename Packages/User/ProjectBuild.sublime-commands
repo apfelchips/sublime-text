@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "Build: Project",
+        "command": "project_build"
+    }
+]

@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+usage() {
+	cat <<-EOF
+		$0 usage:
+		[-h] help
+
+	EOF
+}
+]]></content>
+	<tabTrigger>usage</tabTrigger>
+	<scope>source.shell</scope>
+	<description>Fonction usage</description>
+</snippet>

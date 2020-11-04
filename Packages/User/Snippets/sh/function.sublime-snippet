@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+${1:function_name}() {
+	local ${2:param}=\$1; shift
+	${3:echo "hello world!"}
+}
+]]></content>
+	<tabTrigger>function</tabTrigger>
+	<scope>source.shell</scope>
+	<description>New function</description>
+</snippet>

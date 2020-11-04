@@ -1,0 +1,11 @@
+{
+    // https://github.com/SublimeText/Origami#keyboard-shortcuts
+
+    // no modifiers: travel to an adjacent pane
+    // shift: carry the current file to the destination
+    // alt (option): clone the current file to the destination
+    // super: create an adjacent pane
+    // super+shift: destroy an adjacent pane
+
+    "auto_close_empty_panes": true
+}

@@ -1,0 +1,12 @@
+{
+	"extensions":
+	[
+		"desktop",
+		"Pipfile",
+		"service",
+		".wget2rc",
+		"vmx",
+		"cnf",
+		".flake8"
+	]
+}

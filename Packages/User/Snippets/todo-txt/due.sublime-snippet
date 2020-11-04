@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[due: ]]></content>
+	<tabTrigger>d</tabTrigger>
+	<description>Due date</description>
+	<scope>text.todotxt</scope>
+</snippet>

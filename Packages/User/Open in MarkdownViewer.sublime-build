@@ -1,0 +1,25 @@
+// http://sublimetext.info/docs/en/reference/build_systems.html
+{
+    // https://www.sublimetext.com/docs/3/build_systems.html#exec_options
+    "target": {
+            "exec":
+            {
+                "File":"$packages/User/exec_without_opening_panel.py"
+            }
+    },
+    // https://www.sublimetext.com/docs/3/scope_naming.html
+    //"selector":["text.html.markdown", "markup.heading.markdown", "meta.link.reference.def", "text.html", "text.plain"],
+    "selector": "text.html.markdown",
+    "osx":
+    {
+        "cmd": ["open", "-a", "/Applications/Marked 2.app", "$file"] // https://marked2app.com/
+    },
+    "linux":
+    {
+        "cmd": ["~/Applications/mdview.AppImage", "$file"] // https://github.com/c3er/mdview/releases
+    },
+    "windows":
+    {
+        "cmd": ["cmd.exe","/C","%userprofile%\\Applications\\mdview\\mdview.exe", "$file"] // https://github.com/michelolvera/vs-ghostwriter/releases
+    }
+}
