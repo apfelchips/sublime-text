@@ -100,12 +100,8 @@
 	"ignored_packages":
 	[
 		"All Autocomplete",
-		"InsertDate",
 		"JsPrettier",
 		"LiveReload",
-		"MarkdownPreview",
-		"PlainTasks",
-		"rainbow_csv",
 		"SublimeLinter",
 		"SublimeLinter-chktex",
 		"SublimeLinter-contrib-bashate",
@@ -116,7 +112,6 @@
 		"SublimeLinter-php",
 		"SublimeLinter-phpcs",
 		"SublimeLinter-xmllint",
-		"Vagrant",
 		"Vintage"
 	],
 	"indent_to_bracket": true,
