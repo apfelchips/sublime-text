@@ -1,7 +1,8 @@
 {
     // A list of folders containing *.sublime-project files, e.g.,
     // "projects_path": ["path/to/custom/Projects", "another_path/to/Projects"]
-    "projects_path": ["~/.config/sublime-text-3/Projects/","~/Projects/","~/devel/","~/ports/","~/www/"],
+    "projects_path": ["~/Projects/","~/notes/","~/devel/","~/ports/","~/www/", "~/.config/sublime-text-3/Packages/User/", "~/AppData/Roaming/Sublime Text 3/Packages/User/"],
+
     // Enable local projects directory, such a directory will be named as
     // "Projects - computer_name", where computer_name is your computer hostname.
     // It would be useful if Sublime Text settings are synced across different computers.

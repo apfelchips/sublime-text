@@ -90,6 +90,7 @@
 	],
 	"repositories":
 	[
-		"https://github.com/apfelchips/PlainTasks"
+		"https://github.com/apfelchips/PlainTasks",
+		"https://github.com/apfelchips/ProjectManager"
 	]
 }
