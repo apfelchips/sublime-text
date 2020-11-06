@@ -1,0 +1,208 @@
+{
+	"default":
+	{
+		"command": "codeintel",
+		"complete_commit": true,
+		"complete_commit_fillup": false,
+		"debug": false,
+		"disabled_languages":
+		[
+		],
+		"env":
+		{
+		},
+		"language_settings":
+		{
+			"C++":
+			{
+				"cppFlags":
+				[
+					"-I/usr/local/include",
+					"-L/usr/local/lib"
+				]
+			},
+			"ECMAScript":
+			{
+			},
+			"Go":
+			{
+				"gocodeDefaultLocation": "",
+				"godefDefaultLocation": "",
+				"golangDefaultLocation": ""
+			},
+			"HTML":
+			{
+				"defaultHTMLDecl": "-//W3C//DTD HTML 5//EN"
+			},
+			"HTML5":
+			{
+				"defaultHTML5Decl": "-//W3C//DTD HTML 5//EN"
+			},
+			"JavaScript":
+			{
+			},
+			"Node.js":
+			{
+				"nodejsDefaultInterpreter": ""
+			},
+			"PHP":
+			{
+				"php": "",
+				"phpConfigFile": ""
+			},
+			"Perl":
+			{
+				"perl": ""
+			},
+			"Python":
+			{
+				"python": ""
+			},
+			"Python3":
+			{
+				"python3": ""
+			},
+			"Ruby":
+			{
+				"ruby": ""
+			}
+		},
+		"live": true,
+		"log_levels":
+		[
+			"WARNING"
+		],
+		"max_recursive_dir_depth": 10,
+		"oop_mode": "pipe",
+		"scan_exclude_paths":
+		[
+			"/build/",
+			"/min/",
+			"/cache/"
+		],
+		"scan_extra_paths":
+		[
+		],
+		"scan_files_in_project": true,
+		"selected_catalogs":
+		[
+		],
+		"syntax_map":
+		{
+			"C": "C++",
+			"C++11": "C++",
+			"HTML (Django)": "Django",
+			"JSX": "ECMAScript",
+			"JavaScript": "ECMAScript",
+			"JavaScript (Babel)": "ECMAScript",
+			"Node.js": "ECMAScript",
+			"Objective-C": "C++",
+			"Objective-C++": "C++",
+			"Python Django": "Python",
+			"PythonImproved": "Python"
+		}
+	},
+	"user":
+	{
+		"command": "codeintel",
+		"complete_commit": true,
+		"complete_commit_fillup": false,
+		"debug": false,
+		"disabled_languages":
+		[
+		],
+		"env":
+		{
+		},
+		"language_settings":
+		{
+			"C++":
+			{
+				"cppFlags":
+				[
+					"-I/usr/local/include",
+					"-L/usr/local/lib"
+				]
+			},
+			"ECMAScript":
+			{
+			},
+			"Go":
+			{
+				"gocodeDefaultLocation": "",
+				"godefDefaultLocation": "",
+				"golangDefaultLocation": ""
+			},
+			"HTML":
+			{
+				"defaultHTMLDecl": "-//W3C//DTD HTML 5//EN"
+			},
+			"HTML5":
+			{
+				"defaultHTML5Decl": "-//W3C//DTD HTML 5//EN"
+			},
+			"JavaScript":
+			{
+			},
+			"Node.js":
+			{
+				"nodejsDefaultInterpreter": ""
+			},
+			"PHP":
+			{
+				"php": "",
+				"phpConfigFile": ""
+			},
+			"Perl":
+			{
+				"perl": ""
+			},
+			"Python":
+			{
+				"python": ""
+			},
+			"Python3":
+			{
+				"python3": ""
+			},
+			"Ruby":
+			{
+				"ruby": ""
+			}
+		},
+		"live": true,
+		"log_levels":
+		[
+			"WARNING"
+		],
+		"max_recursive_dir_depth": 10,
+		"oop_mode": "pipe",
+		"scan_exclude_paths":
+		[
+			"/build/",
+			"/min/",
+			"/cache/"
+		],
+		"scan_extra_paths":
+		[
+		],
+		"scan_files_in_project": true,
+		"selected_catalogs":
+		[
+		],
+		"syntax_map":
+		{
+			"C": "C++",
+			"C++11": "C++",
+			"HTML (Django)": "Django",
+			"JSX": "ECMAScript",
+			"JavaScript": "ECMAScript",
+			"JavaScript (Babel)": "ECMAScript",
+			"Node.js": "ECMAScript",
+			"Objective-C": "C++",
+			"Objective-C++": "C++",
+			"Python Django": "Python",
+			"PythonImproved": "Python"
+		}
+	}
+}
