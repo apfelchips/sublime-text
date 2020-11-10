@@ -20,6 +20,14 @@
             "platforms": ["linux", "osx"]
         },
         {
+            "name": "Powershell (Core)",
+            "cmd": "pwsh",
+            "env": {},
+            "enable": true,
+            "default": true,
+            "platforms": ["windows", "linux", "osx"]
+        },
+        {
             "name": "Command Prompt",
             "cmd": "cmd.exe",
             "env": {},
@@ -28,19 +36,11 @@
             "platforms": ["windows"]
         },
         {
-            "name": "Power Shell",
+            "name": "Powershell",
             "cmd": "powershell.exe",
             "env": {},
             "enable": true,
             "default": false,
-            "platforms": ["windows"]
-        },
-        {
-            "name": "Power Shell (Core)",
-            "cmd": "pwsh.exe",
-            "env": {},
-            "enable": true,
-            "default": true,
             "platforms": ["windows"]
         },
         {

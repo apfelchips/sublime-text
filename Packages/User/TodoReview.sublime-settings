@@ -1,15 +1,27 @@
-{
+{ //doc: https://github.com/jonathanrdelgado/SublimeTodoReview#config
     "patterns": {
-        "TODO": "TODO[\\s]*?:[\\s]*(?P<todo>.*)$"
+        "TODO": "TODO[\\s]*?:[\\s]*(?P<todo>.*)$",
+        "FIXME": "FIX ?ME[\\s]*?:[\\s]*(?P<fixme>.*)$",
+        "TEST": "TEST[\\s]*?:[\\s]*(?P<test>.*)$",
+        "NOTE": "NOTE[\\s]*?:[\\s]*(?P<note>.*)$"
     },
     "patterns_weight": {
+        "TODO": 1,
+        "FIXME": 2,
+        "TEST": 3,
+        "NOTE": 4
     },
     "exclude_folders": [
         "*.git*",
         "*.svn*",
-        "*/vendor/*",
-        "*/web/assets/*",
-        "*/web/js/*"
+        "*node_modules*",
+        "*vendor*",
+        "*var*",
+        "*cache*",
+        "*jquery*",
+        "*tinymce*",
+        "*videojs*",
+        "*flowplayer*"
     ],
     "exclude_files": [
         "*.sublime-workspace",
