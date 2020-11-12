@@ -64,6 +64,17 @@
         "command": "insert_php_constructor_property"
     },
 
+    { // Quit everything
+        "keys": ["primary+q"],
+        "command": "chain",
+        "args": {
+            "commands": [
+                ["close_workspace"],
+                ["close"]
+            ]
+        }
+    },
+
     // close Workspace
     {
         "keys": ["primary+alt+w"],
@@ -89,18 +100,50 @@
         }
     },
 
-    { // Sidebar stuff
+    // Sidebar stuff (osx only)
+    {
         "keys": ["alt+tab"],
         "command": "focus_file_on_sidebar",
-        "args":
-        {}
+        "args":{}
     },
     {
         "keys": ["alt+shift+tab"],
         "command": "toggle_minimap",
-        "args":
-        {}
+        "args":{}
     },
+
+    // Settings Shortcuts
+    {
+        "keys": ["primary+,"],
+        "command": "edit_settings ",
+        "args": {
+            "base_file": "${packages}/Default/Preferences.sublime-settings"
+        }
+    },
+    {
+        "keys": ["primary+alt+,"],
+        "command": "edit_settings ",
+        "args": {
+            "base_file": "${packages}/Default/Default ($platform).sublime-keymap"
+        }
+    },
+
+    {
+        "keys": ["primary+shift+,"],
+        "command": "edit_settings ",
+        "args": {
+            "base_file": "${packages}/Default/Default.sublime-commands"
+        }
+    },
+
+    {
+        "keys": ["primary+shift+alt+,"],
+        "command": "edit_settings ",
+        "args": {
+            "base_file": "${packages}/Default/Default ($platform).sublime-mousemap"
+        }
+    },
+
 
     { // deselect selection with escape
         "keys": ["escape"],
@@ -158,18 +201,19 @@
         }
     },
 
-    // Origami (Panes)
-    // // Group Changing Prefix is super+alt
-    // { "keys": ["super+alt+h"], "command": "travel_to_pane", "args": {"direction":"left"} },
-    // { "keys": ["super+alt+j"], "command": "travel_to_pane", "args": {"direction":"down"} },
-    // { "keys": ["super+alt+k"], "command": "travel_to_pane", "args": {"direction":"up"} },
-    // { "keys": ["super+alt+l"], "command": "travel_to_pane", "args": {"direction":"right"} },
-    // { "keys": ["super+alt+l"], "command": "travel_to_pane", "args": {"direction":"right"} },
-    //  destroy_pane
-    // { "keys": ["super+alt+shift+h"], "command": "carry_file_to_pane", "args": {"direction":"left"} },
-    // { "keys": ["super+alt+shift+j"], "command": "carry_file_to_pane", "args": {"direction":"down"} },
-    // { "keys": ["super+alt+shift+k"], "command": "carry_file_to_pane", "args": {"direction":"up"} },
-    // { "keys": ["super+alt+shift+l"], "command": "carry_file_to_pane", "args": {"direction":"right"} }
+    //Origami (Panes)
+    // commands: https://github.com/SublimeText/Origami/blob/master/Main.sublime-menu
+    // Group Changing Prefix is primary+alt
+    { "keys": ["primary+alt+h"], "command": "travel_to_pane", "args": {"direction":"left"} },
+    { "keys": ["primary+alt+j"], "command": "travel_to_pane", "args": {"direction":"down"} },
+    { "keys": ["primary+alt+k"], "command": "travel_to_pane", "args": {"direction":"up"} },
+    { "keys": ["primary+alt+l"], "command": "travel_to_pane", "args": {"direction":"right"} },
+    { "keys": ["primary+alt+l"], "command": "travel_to_pane", "args": {"direction":"right"} },
+    // destroy_pane
+    { "keys": ["primary+alt+shift+h"], "command": "destroy_pane", "args": {"direction":"left"} },
+    { "keys": ["primary+alt+shift+j"], "command": "destroy_pane", "args": {"direction":"down"} },
+    { "keys": ["primary+alt+shift+k"], "command": "destroy_pane", "args": {"direction":"up"} },
+    { "keys": ["primary+alt+shift+l"], "command": "destroy_pane", "args": {"direction":"right"} },
 
     // VI Eulation
     {

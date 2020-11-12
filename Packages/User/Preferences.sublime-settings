@@ -53,7 +53,7 @@
 		"*.db",
 		"*.sqlite"
 	],
-	"close_windows_when_empty": true,
+	"close_windows_when_empty": false,
 	"default_line_ending": "unix",
 	"dictionary": "Packages/Dictionaries/German.dic",
 	"ensure_newline_at_eof_on_save": true,
@@ -134,6 +134,7 @@
 	"show_encoding": true,
 	"show_full_path": true,
 	"show_line_endings": true,
+	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"vintage_use_clipboard": true,
