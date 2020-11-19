@@ -14,7 +14,7 @@
     },
     "linux":
     {
-        "cmd": ["xdg-open", "$file"]
+        "cmd": ["sensible-browser", "$file"] // https://manpages.debian.org/buster/sensible-utils/sensible-browser.1.en.html
     },
      "windows":
     {

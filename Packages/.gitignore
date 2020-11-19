@@ -1,11 +1,15 @@
 /**
-!.gitignore
+!/.gitignore
+.DS_Store
 
 !User/
 !User/**
 
-#Sublime defaults overrides
 !Default/
 !Default/**
 
-.DS_Store
+!Phpcs
+!Phpcs/Side Bar.sublime-menu
+
+!TodoReview
+!TodoReview/Side Bar.sublime-menu

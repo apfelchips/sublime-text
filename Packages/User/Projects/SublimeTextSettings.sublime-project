@@ -1,6 +1,10 @@
 {
 	"folders": [
-		{
+        {
+            "name": "SublimeText Package Overrides",
+            "path": "../../"
+        },
+        {
             "name": "SublimeText User Settings",
             "path": "../"
 		}
