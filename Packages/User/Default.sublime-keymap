@@ -5,6 +5,11 @@
     //
     // show executed commands: sublime.log_commands(True);
 
+    { // font size reset with revert_font_size.py
+        "keys": ["primary+0"],
+        "command": "revert_font_size"
+    },
+
     { // manage comments
         "keys": ["primary+7"],
         "command": "toggle_comment",
@@ -65,6 +70,16 @@
     },
 
     { // Quit everything
+        "keys": ["alt+f4"],
+        "command": "chain",
+        "args": {
+            "commands": [
+                ["close_workspace"],
+                ["close"]
+            ]
+        }
+    },
+    { // Quit everything
         "keys": ["primary+q"],
         "command": "chain",
         "args": {
@@ -72,6 +87,13 @@
                 ["close_workspace"],
                 ["close"]
             ]
+        }
+    },
+
+    { // Quit everything
+        "keys": ["primary+w"],
+        "command": "close",
+        "args": {
         }
     },
 
@@ -84,6 +106,17 @@
         "keys": ["primary+shift+w"],
         "command": "close_workspace"
     },
+
+    {
+        "keys": ["primary+alt+p"],
+        "command": "prompt_select_workspace"
+    },
+
+    {
+        "keys": ["primary+shift+alt+p"],
+        "command": "project_manager", "args": {"action": "switch"}
+    },
+
 
     { //undo close tab
         "keys": ["primary+shift+t"],

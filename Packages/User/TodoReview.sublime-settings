@@ -16,12 +16,14 @@
         "*.svn*",
         "*node_modules*",
         "*vendor*",
+        "*assets*",
         "*var*",
         "*cache*",
         "*jquery*",
         "*tinymce*",
         "*videojs*",
-        "*flowplayer*"
+        "*flowplayer*",
+        "*plyr*"
     ],
     "exclude_files": [
         "*.sublime-workspace",

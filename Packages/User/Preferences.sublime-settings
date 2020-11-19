@@ -95,7 +95,7 @@
 		"cache"
 	],
 	"font_face": "Menlo Regular for Powerline",
-	"font_size": 13,
+	"font_size": 12,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
@@ -126,6 +126,7 @@
 		"*.log"
 	],
 	"jsoncomma_on_save": true,
+	"revert_font_size": 12,
 	"rulers":
 	[
 		80,
