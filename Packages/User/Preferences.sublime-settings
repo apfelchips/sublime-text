@@ -103,6 +103,7 @@
 	"ignored_packages":
 	[
 		"All Autocomplete",
+		"EditorConfig",
 		"JsPrettier",
 		"LiveReload",
 		"SublimeLinter",
