@@ -87,11 +87,11 @@
 		"Undo Close Tab",
 		"VBScript",
 		"VimL",
-		"Vue Syntax Highlight"
+		"Vue Syntax Highlight",
 	],
 	"repositories":
 	[
 		"https://github.com/apfelchips/PlainTasks",
 		"https://github.com/apfelchips/ProjectManager"
-	]
+	],
 }
