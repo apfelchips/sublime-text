@@ -19,15 +19,30 @@
     //
     {
         "caption":"Debugging: Log Commands",
-        "command": "sublime.log_commands(True)"
+        "command": "chain",
+        "args": {
+            "commands": [
+                ["sublime.log_commands(True)"]
+            ]
+        }
     },
     {
         "caption":"Debugging: Log Inputs",
-        "command": "sublime.log_input(True)"
+        "command":"chain",
+        "args": {
+            "commands": [
+                ["sublime.log_input(True)"]
+            ]
+        }
     },
     {
         "caption":"Debugging: Log RegEx",
-        "command": "sublime.log_result_regex(True)"
+        "command":"chain",
+        "args": {
+            "commands": [
+                ["sublime.log_result_regex(True)"]
+            ]
+        }
     },
     {
         "caption": "Terminus: Open iPython",
@@ -58,7 +73,6 @@
             "paths": ["../impl", "../include"]
         }
     },
-
 
     // {
     //     "caption": "Open: Notes",

@@ -1,7 +1,7 @@
+# src https://github.com/SublimeText/RevertFontSize
+
 import sublime
 import sublime_plugin
-
-# src https://github.com/SublimeText/RevertFontSize
 
 class RevertFontSizeCommand(sublime_plugin.ApplicationCommand):
     """Plugin to revert user 'font_size' to a 'default' value."""

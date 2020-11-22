@@ -22,7 +22,8 @@
         "modifiers": ["super+alt"],
         "press_command": "drag_select",
         "command": "chain",
-        "args": {
+        "args":
+        {
             "commands": [
                 ["dash_doc"]
             ]

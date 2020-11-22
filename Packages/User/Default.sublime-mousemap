@@ -21,7 +21,8 @@
         "modifiers": ["ctrl+shift"],
         "press_command": "drag_select",
         "command": "chain",
-        "args": {
+        "args":
+        {
             "commands": [
                 ["dash_doc"]
             ]
@@ -55,7 +56,8 @@
         "press_command": "drag_select",
         "modifiers": [],
         "command": "chain",
-        "args": {
+        "args":
+        {
             "commands": [
                 ["open_url_under_cursor"]
                 //["dash_doc"]
@@ -68,7 +70,8 @@
         "modifiers": ["ctrl"],
         "press_command": "drag_select",
         "command": "chain",
-        "args": {
+        "args":
+        {
             "commands": [
                 ["dash_doc"]
             ]
