@@ -2,7 +2,6 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"EditorConfig",
 	],
 	"installed_packages":
 	[
@@ -88,11 +87,11 @@
 		"Undo Close Tab",
 		"VBScript",
 		"VimL",
-		"Vue Syntax Highlight",
+		"Vue Syntax Highlight"
 	],
 	"repositories":
 	[
 		"https://github.com/apfelchips/PlainTasks",
 		"https://github.com/apfelchips/ProjectManager"
-	],
+	]
 }
