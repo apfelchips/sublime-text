@@ -3,6 +3,7 @@
 	[
 		"dsublime-snippet",
 		"targets",
-		"wsb"
+		"wsb",
+		"csslv"
 	]
 }

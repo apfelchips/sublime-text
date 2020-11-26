@@ -2,6 +2,7 @@
 {
     // a list of available shells to execute
     // the shell marked as "default" will the default shell
+
     "shell_configs": [
         {
             "name": "Bash",
@@ -76,7 +77,7 @@
     // use ctrl+v to paste
     // use ctrl+w to close terminal
     // use ctrl+pagedown/pageup to change tabs
-    "natural_keyboard": true,
+    "natural_keyboard": false,
 
     // Terminus sends all keybinds of the form `ctrl+[a-z]` to the terminal process
     // directly. Windows and Linux users sometimes may want to disable some of such

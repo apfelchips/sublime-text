@@ -237,11 +237,13 @@
     //Origami (Panes)
     // commands: https://github.com/SublimeText/Origami/blob/master/Main.sublime-menu
     // Group Changing Prefix is primary+alt
-    { "keys": ["primary+alt+h"], "command": "travel_to_pane", "args": {"direction":"left"} },
-    { "keys": ["primary+alt+j"], "command": "travel_to_pane", "args": {"direction":"down"} },
-    { "keys": ["primary+alt+k"], "command": "travel_to_pane", "args": {"direction":"up"} },
-    { "keys": ["primary+alt+l"], "command": "travel_to_pane", "args": {"direction":"right"} },
-    { "keys": ["primary+alt+l"], "command": "travel_to_pane", "args": {"direction":"right"} },
+    { "keys": ["alt+shift+h"], "command": "travel_to_pane", "args": {"direction":"left"} },
+    { "keys": ["alt+shift+j"], "command": "travel_to_pane", "args": {"direction":"down"} },
+    { "keys": ["alt+shift+k"], "command": "travel_to_pane", "args": {"direction":"up"} },
+    { "keys": ["alt+shift+l"], "command": "travel_to_pane", "args": {"direction":"right"} },
+
+    { "keys": ["alt+shift+w"], "command": "destroy_pane", "args": {"direction":"self"} },
+
     // destroy_pane
     { "keys": ["primary+alt+shift+h"], "command": "destroy_pane", "args": {"direction":"left"} },
     { "keys": ["primary+alt+shift+j"], "command": "destroy_pane", "args": {"direction":"down"} },

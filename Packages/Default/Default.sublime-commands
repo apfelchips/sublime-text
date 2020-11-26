@@ -118,8 +118,8 @@
     { "caption": "Permute Selections: Unique", "command": "permute_selection", "args": {"operation": "unique"} },
     { "caption": "Permute Selections: Shuffle", "command": "permute_selection", "args": {"operation": "shuffle"} },
 
-    { "caption": "Code Folding: Unfold All", "command": "unfold_all" },
-    { "caption": "Code Folding: Fold Tag Attributes", "command": "fold_tag_attributes" },
+    // { "caption": "Code Folding: Unfold All", "command": "unfold_all" },
+    // { "caption": "Code Folding: Fold Tag Attributes", "command": "fold_tag_attributes" },
 
     { "caption": "Trim Trailing White Space", "command": "trim_trailing_white_space" },
 

@@ -1,6 +1,6 @@
 [
     // http://docs.sublimetext.info/en/latest/customization/key_bindings.html
-    // http://docs.sublimetext.info/en/latest/reference/commands.html
+    // unofficial command overview: https://web.archive.org/web/20191102071845/http://docs.sublimetext.info/en/latest/reference/commands.html
     // examples: https://github.com/fjl/Sublime-Missing-Palette-Commands/blob/st3/Missing.sublime-commands
     //
     // show executed commands: sublime.log_commands(True);
@@ -16,34 +16,25 @@
     //     "args": {"key": "value"}
     // }
     // extra command can be added to Command Palette as
-    //
+
+
     {
-        "caption":"Debugging: Log Commands",
-        "command": "chain",
-        "args": {
-            "commands": [
-                ["sublime.log_commands(True)"]
-            ]
+        "caption": "Debugging: ON",
+        "command": "python_exec",
+        "args":
+        {
+            "cmd": "sublime.log_input(True); sublime.log_commands(True); sublime.log_result_regex(True)"
         }
     },
     {
-        "caption":"Debugging: Log Inputs",
-        "command":"chain",
-        "args": {
-            "commands": [
-                ["sublime.log_input(True)"]
-            ]
+        "caption": "Debugging: OFF",
+        "command": "python_exec",
+        "args":
+        {
+            "cmd": "sublime.log_input(False); sublime.log_commands(False); sublime.log_result_regex(False)"
         }
     },
-    {
-        "caption":"Debugging: Log RegEx",
-        "command":"chain",
-        "args": {
-            "commands": [
-                ["sublime.log_result_regex(True)"]
-            ]
-        }
-    },
+
     {
         "caption": "Terminus: Open iPython",
         "command": "terminus_open",
@@ -55,11 +46,11 @@
         }
     },
 
-    {// FileDiff extension
+    { // FileDiff extension
         "caption": "Diff current with saved",
         "command": "file_diff_saved"
     },
-    {// FileDiff extension
+    { // FileDiff extension
         "caption": "Diff current with other file in project",
         "command": "file_diff_file"
     },
@@ -79,13 +70,59 @@
     //     "command": "open_project",
     //     "args":
     //     {
-    //         "cmd": "~/notes/notes.sublime-project"
+    //         "project": "~/notes/notes.sublime-project"
     //     }
     // },
 
     {
+        "caption": "Reveal in Sidebar",
+        "command": "reveal_in_side_bar"
+    },
+
+    {
         "caption": "Open Recent Project",
         "command": "prompt_select_workspace",
+        "args":
+        {}
+    },
+    {
+        "caption": "Fold: Tag Attributes",
+        "command": "fold_tag_attributes"
+    },
+
+    {
+        "caption": "Fold: Level 1 - Classes",
+        "command": "fold_by_level",
+        "args":
+        {
+            "level": 1
+        }
+    },
+    {
+        "caption": "Fold: Level 2 - Functions",
+        "command": "fold_by_level",
+        "args":
+        {
+            "level": 2
+        }
+    },
+    {
+        "caption": "Fold: Level 3",
+        "command": "fold_by_level",
+        "args":
+        {
+            "level": 3
+        }
+    },
+    {
+        "caption": "Fold: Fold All",
+        "command": "fold_all",
+        "args":
+        {}
+    },
+    {
+        "caption": "Fold: Unfold All",
+        "command": "unfold_all",
         "args":
         {}
     }

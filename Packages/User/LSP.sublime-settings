@@ -1,19 +1,131 @@
-{ // doc: https://lsp.readthedocs.io/en/latest
+{
     "clients":
     {
-        "intelephense-ls": // npm i intelephense -g
+        "intelephense-ls":
         {
             "enabled": false
         },
-
-        "phpls": // $COMPOSER_HOME/vendor/felixfbecker/language-server
+        "phpls":
         {
-            "command": ["php",
+            "command": [
+                "php",
                 "~/bin/php-language-server/felixfbecker/language-server/bin/php-language-server.php",
                 "--tcp-server=127.0.0.1:5436"
             ],
             "enabled": true,
             "tcp_port": 5436
+        },
+        "polymer-ide":
+        {
+            "command": [
+                "polymer-editor-service"
+            ],
+            "enabled": false,
+            "languages": [
+            {
+                "languageId": "html",
+                "scopes": [
+                    "text.html",
+                    "text.html.basic",
+                    "source.html"
+                ],
+                "syntaxes": [
+                    "Packages/HTML/HTML.sublime-syntax"
+                ]
+            },
+            {
+                "languageId": "javascript",
+                "scopes": [
+                    "source.js"
+                ],
+                "syntaxes": [
+                    "Packages/JavaScript/JavaScript.sublime-syntax"
+                ]
+            },
+            {
+                "languageId": "css",
+                "scopes": [
+                    "source.css"
+                ],
+                "syntaxes": [
+                    "Packages/CSS/CSS.sublime-syntax"
+                ]
+            },
+            {
+                "languageId": "json",
+                "scopes": [
+                    "source.json"
+                ],
+                "syntaxes": [
+                    "Packages/JavaScript/JSON.sublime-syntax"
+                ]
+            }],
+            "settings":
+            {
+                "polymer-ide":
+                {
+                    "analyzeWholePackage": false,
+                    "fixOnSave": false
+                }
+            }
+        },
+        "powershell-ls":
+        {
+            "command": [
+                "pwsh",
+                "-NoLogo",
+                "-NoProfile",
+                "-NonInteractive",
+                "-Command",
+                "~/bin/PowerShellEditorServices/PowerShellEditorServices/Start-EditorServices.ps1",
+                "-LogPath",
+                "~/bin/PowerShellEditorServices/pses.log",
+                "-LogLevel",
+                "Normal",
+                "-SessionDetailsPath",
+                "~/bin/PowerShellEditorServices/session.json",
+                "-FeatureFlags",
+                "@()",
+                "-HostName",
+                "'Sublime Text'",
+                "-HostProfileId",
+                "subl",
+                "-HostVersion",
+                "2.0.0",
+                "-AdditionalModules",
+                "@()",
+                "-BundledModulesPath",
+                "~/bin/PowerShellEditorServices",
+                "-Stdio"
+            ],
+            "enabled": true,
+            "languageId": "powershell",
+            "scopes": [
+                "source.powershell"
+            ],
+            "syntaxes": [
+                "Packages/PowerShell/Support/PowershellSyntax.tmLanguage"
+            ]
+        },
+        "vscode-css":
+        {
+            "command": [
+                "css-languageserver",
+                "--stdio"
+            ],
+            "enabled": true,
+            "languageId": "css",
+            "scopes": [
+                "source.css"
+            ],
+            "syntaxes": [
+                "Packages/CSS/CSS.sublime-syntax"
+            ]
         }
     }
+    // "log_debug": true,
+    // "log_server": [
+    //     "panel"
+    // ],
+    // "log_stderr": true
 }
