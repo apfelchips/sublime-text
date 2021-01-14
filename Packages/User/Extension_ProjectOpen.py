@@ -13,19 +13,18 @@ import platform
 def subl(*args):
     executable_path = sublime.executable_path()
     if sublime.platform() == 'osx':
-    app_path = executable_path[:executable_path.rfind('.ap/') + 5]
-    executable_path = app_path + 'Contents/SharedSupport/bin/subl'
+        app_path = executable_path[:executable_path.rfind('.ap/') + 5]
+        executable_path = app_path + 'Contents/SharedSupport/bin/subl'
 
     subprocess.Popen([executable_path] + list(args))
 
     def on_activated():
-    window = sublime.active_window()
-    view = window.active_view()
-
-    if sublime.platform() == 'windows':
-        # fix focus on windows
-        window.run_command('focus_neighboring_group')
-        window.focus_view(view)
+        window = sublime.active_window()
+        view = window.active_view()
+        if sublime.platform() == 'windows':
+            # fix focus on windows
+            window.run_command('focus_neighboring_group')
+            window.focus_view(view)
 
     sublime_plugin.on_activated(view.id())
     sublime.set_timeout_async(lambda: sublime_plugin.on_activated_async(view.id()))
