@@ -190,6 +190,13 @@
         }]
     },
 
+
+    { // eternal Terminal
+        "keys": ["shift+alt+`"],
+        "command": "open_terminal_project_folder"
+    },
+
+
     { // Terminus Panel
         "keys": ["alt+`"],
         "command": "toggle_terminus_panel",

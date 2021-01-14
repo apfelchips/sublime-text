@@ -98,7 +98,7 @@
                 "~/bin/PowerShellEditorServices",
                 "-Stdio"
             ],
-            "enabled": true,
+            "enabled": false,
             "languageId": "powershell",
             "scopes": [
                 "source.powershell"
@@ -113,7 +113,7 @@
                 "css-languageserver",
                 "--stdio"
             ],
-            "enabled": true,
+            "enabled": false,
             "languageId": "css",
             "scopes": [
                 "source.css"

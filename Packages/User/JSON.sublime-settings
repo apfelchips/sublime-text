@@ -7,7 +7,9 @@
 		".eslintrc",
 		".arcconfig",
 		"bttpreset",
-		"sublime-build"
+		"sublime-build",
+		".prettierrc",
+		"json5"
 	],
 	"word_wrap": "false"
 }

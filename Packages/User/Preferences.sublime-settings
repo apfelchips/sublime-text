@@ -98,12 +98,12 @@
 		"cache"
 	],
 	"font_face": "Menlo Regular for Powerline",
-	"font_size": 13,
+	"font_size": 12,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"All Autocomplete",
-		"JsPrettier",
+		"HTML-CSS-JS Prettify",
 		"LiveReload",
 		"SublimeLinter",
 		"SublimeLinter-chktex",
@@ -133,7 +133,8 @@
 	"rulers":
 	[
 		80,
-		120
+		120,
+		160
 	],
 	"show_encoding": true,
 	"show_full_path": true,
