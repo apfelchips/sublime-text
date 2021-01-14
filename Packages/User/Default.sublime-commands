@@ -36,6 +36,11 @@
     },
 
     {
+        "caption": "Enter Sublime License",
+        "command": "show_license_window"
+    },
+
+    {
         "caption": "Terminus: Open iPython",
         "command": "terminus_open",
         "args":
