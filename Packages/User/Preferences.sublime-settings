@@ -103,7 +103,6 @@
 	"ignored_packages":
 	[
 		"All Autocomplete",
-		"HTML-CSS-JS Prettify",
 		"LiveReload",
 		"SublimeLinter",
 		"SublimeLinter-chktex",

@@ -1,4 +1,4 @@
-[   // https://www.sublimetext.com/docs/3/key_bindings.html
+[ // https://www.sublimetext.com/docs/3/key_bindings.html
     // http://docs.sublimetext.info/en/latest/customization/key_bindings.html
     // http://docs.sublimetext.info/en/latest/reference/commands.html
     // examples: https://github.com/fjl/Sublime-Missing-Palette-Commands/blob/st3/Missing.sublime-commands
@@ -9,6 +9,13 @@
         "keys": ["primary+0"],
         "command": "revert_font_size"
     },
+
+
+    { // open with default
+        "keys": ["primary+d"],
+        "command": "open_default_for_current_view"
+    },
+
 
     { // manage comments
         "keys": ["primary+7"],
@@ -72,7 +79,8 @@
     { // Quit everything
         "keys": ["alt+f4"],
         "command": "chain",
-        "args": {
+        "args":
+        {
             "commands": [
                 ["close_workspace"],
                 ["close"]
@@ -82,7 +90,8 @@
     { // Quit everything
         "keys": ["primary+q"],
         "command": "chain",
-        "args": {
+        "args":
+        {
             "commands": [
                 ["close_workspace"],
                 ["close"]
@@ -93,8 +102,8 @@
     { // Quit everything
         "keys": ["primary+w"],
         "command": "close",
-        "args": {
-        }
+        "args":
+        {}
     },
 
     // close Workspace
@@ -114,7 +123,11 @@
 
     {
         "keys": ["primary+shift+alt+p"],
-        "command": "project_manager", "args": {"action": "switch"}
+        "command": "project_manager",
+        "args":
+        {
+            "action": "switch"
+        }
     },
 
 
@@ -137,26 +150,30 @@
     {
         "keys": ["alt+tab"],
         "command": "focus_file_on_sidebar",
-        "args":{}
+        "args":
+        {}
     },
     {
         "keys": ["alt+shift+tab"],
         "command": "toggle_minimap",
-        "args":{}
+        "args":
+        {}
     },
 
     // Settings Shortcuts
     {
         "keys": ["primary+,"],
         "command": "edit_settings ",
-        "args": {
+        "args":
+        {
             "base_file": "${packages}/Default/Preferences.sublime-settings"
         }
     },
     {
         "keys": ["primary+alt+,"],
         "command": "edit_settings ",
-        "args": {
+        "args":
+        {
             "base_file": "${packages}/Default/Default ($platform).sublime-keymap"
         }
     },
@@ -164,7 +181,8 @@
     {
         "keys": ["primary+shift+,"],
         "command": "edit_settings ",
-        "args": {
+        "args":
+        {
             "base_file": "${packages}/Default/Default.sublime-commands"
         }
     },
@@ -172,7 +190,8 @@
     {
         "keys": ["primary+shift+alt+,"],
         "command": "edit_settings ",
-        "args": {
+        "args":
+        {
             "base_file": "${packages}/Default/Default ($platform).sublime-mousemap"
         }
     },
@@ -191,11 +210,10 @@
     },
 
 
-    { // eternal Terminal
-        "keys": ["shift+alt+`"],
+    { // external Terminal
+        "keys": ["primary+shift+`"],
         "command": "open_terminal_project_folder"
     },
-
 
     { // Terminus Panel
         "keys": ["alt+`"],
@@ -206,8 +224,9 @@
             "cwd": "${file_path:${project}}"
         }
     },
+
     { // Terminus Page
-        "keys": ["primary+alt+`"],
+        "keys": ["shift+alt+`"],
         "command": "terminus_open",
         "args":
         {
@@ -216,7 +235,7 @@
         }
     },
 
-    { // lookup with dash doc
+    { // lookup with dash doc / zeal
         "keys": ["primary+shift+/"],
         "command": "dash_doc"
     },
@@ -228,6 +247,24 @@
         {
             "extensions": [".cpp", ".cxx", ".cc", ".c", "Qt.cpp", "Qt.h", ".hpp", ".hxx", ".h", "_p.h", "_p_p.h", ".ipp", ".inl", ".m", ".mm"],
             "paths": ["../impl", "../include"]
+        }
+    },
+
+    { // add newline
+        "keys": ["shift+enter"],
+        "command": "run_macro_file",
+        "args":
+        {
+            "file": "res://Packages/User/Macros/new_unindented_line_before.sublime-macro"
+        }
+    },
+
+    { // mirrors shift+delete
+        "keys": ["shift+backspace"],
+        "command": "run_macro_file",
+        "args":
+        {
+            "file": "res://Packages/Default/Delete to EOL.sublime-macro"
         }
     },
 
@@ -244,18 +281,81 @@
     //Origami (Panes)
     // commands: https://github.com/SublimeText/Origami/blob/master/Main.sublime-menu
     // Group Changing Prefix is primary+alt
-    { "keys": ["alt+shift+h"], "command": "travel_to_pane", "args": {"direction":"left"} },
-    { "keys": ["alt+shift+j"], "command": "travel_to_pane", "args": {"direction":"down"} },
-    { "keys": ["alt+shift+k"], "command": "travel_to_pane", "args": {"direction":"up"} },
-    { "keys": ["alt+shift+l"], "command": "travel_to_pane", "args": {"direction":"right"} },
+    {
+        "keys": ["alt+shift+h"],
+        "command": "travel_to_pane",
+        "args":
+        {
+            "direction": "left"
+        }
+    },
+    {
+        "keys": ["alt+shift+j"],
+        "command": "travel_to_pane",
+        "args":
+        {
+            "direction": "down"
+        }
+    },
+    {
+        "keys": ["alt+shift+k"],
+        "command": "travel_to_pane",
+        "args":
+        {
+            "direction": "up"
+        }
+    },
+    {
+        "keys": ["alt+shift+l"],
+        "command": "travel_to_pane",
+        "args":
+        {
+            "direction": "right"
+        }
+    },
 
-    { "keys": ["alt+shift+w"], "command": "destroy_pane", "args": {"direction":"self"} },
+    {
+        "keys": ["alt+shift+w"],
+        "command": "destroy_pane",
+        "args":
+        {
+            "direction": "self"
+        }
+    },
 
     // destroy_pane
-    { "keys": ["primary+alt+shift+h"], "command": "destroy_pane", "args": {"direction":"left"} },
-    { "keys": ["primary+alt+shift+j"], "command": "destroy_pane", "args": {"direction":"down"} },
-    { "keys": ["primary+alt+shift+k"], "command": "destroy_pane", "args": {"direction":"up"} },
-    { "keys": ["primary+alt+shift+l"], "command": "destroy_pane", "args": {"direction":"right"} },
+    {
+        "keys": ["primary+alt+shift+h"],
+        "command": "destroy_pane",
+        "args":
+        {
+            "direction": "left"
+        }
+    },
+    {
+        "keys": ["primary+alt+shift+j"],
+        "command": "destroy_pane",
+        "args":
+        {
+            "direction": "down"
+        }
+    },
+    {
+        "keys": ["primary+alt+shift+k"],
+        "command": "destroy_pane",
+        "args":
+        {
+            "direction": "up"
+        }
+    },
+    {
+        "keys": ["primary+alt+shift+l"],
+        "command": "destroy_pane",
+        "args":
+        {
+            "direction": "right"
+        }
+    },
 
     // VI Eulation
     {
@@ -275,7 +375,8 @@
     {
         "keys": ["j", "k"],
         "command": "chain",
-        "args": {
+        "args":
+        {
             "commands": [
                 ["exit_insert_mode"],
                 ["hide_auto_complete"]
@@ -377,7 +478,7 @@
         "context": [
         {
             "key": "setting.command_mode"
-    },
+        },
         {
             "key": "num_selections",
             "operand": 1
