@@ -9,7 +9,8 @@
 		"bttpreset",
 		"sublime-build",
 		".prettierrc",
-		"json5"
+		"json5",
+		"sublime-project-template"
 	],
 	"word_wrap": "false"
 }

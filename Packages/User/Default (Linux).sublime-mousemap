@@ -1,79 +1,91 @@
-[ // "primary" doesn't work as a mousemap modifier
-
+[   // defualts: https://github.com/twolfson/sublime-files/blob/master/Packages/Default/Default%20(Linux).sublime-mousemap
+    // "primary" doesn't work as a mousemap modifier
     {
         "button": "button1",
         "count": 1,
-        "modifiers": ["ctrl"],
+        "modifiers": [
+            "ctrl"
+        ],
         "press_command": "drag_select",
         "command": "chain",
-        "args":
-        {
+        "args": {
             "commands": [
-                ["open_url_under_cursor"],
-                ["open_path_strings"]
+                [
+                    "open_url_under_cursor"
+                ],
+                [
+                    "open_path_strings"
+                ]
             ]
         }
     },
-
     {
         "button": "button1",
         "count": 1,
-        "modifiers": ["ctrl+shift"],
+        "modifiers": [
+            "ctrl","shift"
+        ],
         "press_command": "drag_select",
         "command": "chain",
-        "args":
-        {
+        "args": {
             "commands": [
-                ["dash_doc"]
+                [
+                    "dash_doc"
+                ]
             ]
         }
     },
-
     {
         "button": "button1",
         "count": 1,
-        "modifiers": ["ctrl+alt"],
+        "modifiers": [
+            "ctrl","alt"
+        ],
         "press_command": "drag_select",
         "command": "chain",
-        "args":
-        {
+        "args": {
             "commands": [
-                ["goto_definition"]
+                [
+                    "goto_definition"
+                ]
             ]
         }
     },
-
     {
         "button": "button2",
         "count": 1,
-        "modifiers": ["ctrl"],
+        "modifiers": [
+            "ctrl"
+        ],
         "command": "jump_back"
     },
-
     {
         "button": "button3",
         "count": 1,
         "press_command": "drag_select",
         "modifiers": [],
         "command": "chain",
-        "args":
-        {
+        "args": {
             "commands": [
-                ["open_url_under_cursor"]
-                //["dash_doc"]
+                [
+                    "open_url_under_cursor"
+                ]
             ]
         }
     },
     {
         "button": "button3",
         "count": 1,
-        "modifiers": ["ctrl"],
+        "modifiers": [
+            "ctrl"
+        ],
         "press_command": "drag_select",
         "command": "chain",
-        "args":
-        {
+        "args": {
             "commands": [
-                ["dash_doc"]
+                [
+                    "dash_doc"
+                ]
             ]
         }
     }
