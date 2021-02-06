@@ -136,6 +136,15 @@
         "command": "scb_undo_tab"
     },
 
+    { // goto file
+        "keys": ["primary+shift+g"],
+        "command": "open_file_folder"
+    },
+    { // goto project
+        "keys": ["primary+shift+alt+g"],
+        "command": "open_project_folder"
+    },
+
     { // always use the "replace" search panel
         "keys": ["primary+f"],
         "command": "show_panel",
