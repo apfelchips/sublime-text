@@ -1,3 +1,5 @@
+# src: https://github.com/twolfson/sublime-files/blob/master/Packages/Default/exec.py
+
 import collections
 import functools
 import html

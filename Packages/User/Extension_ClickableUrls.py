@@ -5,7 +5,6 @@ import sublime_plugin
 import webbrowser
 import threading
 
-
 class UrlHighlighter(sublime_plugin.EventListener):
     # Thanks Jeff Atwood http://www.codinghorror.com/blog/2008/10/the-problem-with-urls.html
     # ^ that up here is a URL that should be matched

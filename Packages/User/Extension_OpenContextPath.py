@@ -10,11 +10,11 @@ from itertools import chain
 import sublime
 import sublime_plugin
 
-
 platform = sublime.platform()
-log = logging.getLogger()
+log = logging.getLogger("OpenContextPath")
 
-class OpenPathStringsCommand(sublime_plugin.TextCommand):
+
+class OpenContextPathCommand(sublime_plugin.TextCommand):
     """Open file paths at the current cursor position."""
 
     # the regex to split a text into individual parts of a possible path
@@ -28,15 +28,32 @@ class OpenPathStringsCommand(sublime_plugin.TextCommand):
     def run(self, edit, event=None):
         """Run the command."""
         paths = self.find_paths(event)
-
-        if paths:
-            for path, info in paths:
-                self.open_path(path, info)
+        for path, info in paths:
+            self.open_path(path, info)
 
     def is_enabled(self, event=None):
         """Whether the command is enabled."""
         paths = self.find_paths(event)
         return len(paths) > 0
+
+    def is_visible(self, event=None):
+        """Whether the context menu entry is visible."""
+        paths = self.find_paths(event)
+        return len(paths) > 0
+
+    def description(self, event=None):
+        """Describe the context menu entry."""
+        paths = self.find_paths(event)
+        if paths:
+            # only show the name of the first found path
+            path, info = paths[0]
+            desc = "Open " + os.path.basename(os.path.normpath(path))
+            if info.get("line"):
+                desc += " at line {}".format(info["line"])
+
+            return desc
+
+        return ""
 
     def want_event(self):
         """Whether we need the event data."""
@@ -73,36 +90,46 @@ class OpenPathStringsCommand(sublime_plugin.TextCommand):
 
     def get_view_settings(self):
         """Find the settings for the current view."""
-        settings = self.view.settings().get("open_path", {})
+        settings = self.view.settings().get("open_context_path", {})
         if not settings:
             # if this is not the window's active view (which is true for
             # panels) we can try to find some settings there
             active_view = self.view.window().active_view()
             if self.view != active_view:
-                settings = active_view.settings().get("open_path_strings", {})
+                settings = active_view.settings().get("open_context_path", {})
 
         return settings
 
     def get_context(self):
         """Return the current context setting."""
-        settings = sublime.load_settings("OpenPathStrings.sublime-settings")
+        settings = sublime.load_settings("OpenContextPath.sublime-settings")
         view_settings = self.get_view_settings()
 
         # give the view settings precedence over the global settings
         context = view_settings.get("context", None)
         if not context:
-            context = settings.get("context", 150)
+            context = settings.get("context", 100)
 
         return context
 
     def get_directories(self):
         """Collect the current list of directories from the settings."""
-        settings = sublime.load_settings("OpenPathStrings.sublime-settings")
+        settings = sublime.load_settings("OpenContextPath.sublime-settings")
         view_settings = self.get_view_settings()
 
         # give the view settings precedence over the global settings
         dirs = view_settings.get("directories", [])
         dirs += settings.get("directories", [])
+
+        # expand ~ to the home directory
+        dirs = [os.path.expanduser(dir) for dir in dirs]
+
+        # expand Sublime Text and environment variables
+        variables = {}
+        variables.update(self.view.window().extract_variables())
+        variables.update(os.environ)
+
+        dirs = [sublime.expand_variables(dir, variables) for dir in dirs]
 
         # make all relative paths absolute by basing them on the project folder
         project = self.view.window().project_file_name()
@@ -116,7 +143,7 @@ class OpenPathStringsCommand(sublime_plugin.TextCommand):
 
     def get_patterns(self):
         """Collect the current list of patterns from the settings."""
-        settings = sublime.load_settings("OpenPathStrings.sublime-settings")
+        settings = sublime.load_settings("OpenContextPath.sublime-settings")
         view_settings = self.get_view_settings()
 
         # give the view settings precedence over the global settings
@@ -248,6 +275,13 @@ class OpenPathStringsCommand(sublime_plugin.TextCommand):
         # ignore special directories with no separator
         if path in [".", ".."]:
             return None
+
+        # expand ~ to the user's home directory
+        if path.startswith("~"):
+            path = os.path.expanduser(path)
+
+        # expand the environment variables
+        path = os.path.expandvars(path)
 
         if platform == "windows":
             # disable UNC paths on Windows

@@ -24,7 +24,7 @@
             "commands": [
                 ["goto_definition"],
                 ["open_url_under_cursor"],
-                ["open_path_strings"]
+                ["open_context_path"]
             ]
         }
     },
