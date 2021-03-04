@@ -1,7 +1,7 @@
 {
 	"extensions":
 	[
-		"gas",
-		"gasm"
+		".gas",
+		".gasm"
 	]
 }

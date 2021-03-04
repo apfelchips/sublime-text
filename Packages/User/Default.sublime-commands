@@ -18,7 +18,6 @@
     // }
     // extra command can be added to Command Palette as
 
-
     {
         "caption": "Debugging: ON",
         "command": "python_exec",
@@ -27,6 +26,7 @@
             "cmd": "sublime.log_input(True); sublime.log_commands(True); sublime.log_result_regex(True)"
         }
     },
+
     {
         "caption": "Debugging: OFF",
         "command": "python_exec",
@@ -40,6 +40,25 @@
         "caption": "Enter Sublime License",
         "command": "show_license_window"
     },
+
+    {
+        "caption": "Browse Packages",
+        "command": "open_dir",
+        "args":
+        {
+            "dir": "$packages"
+        }
+    },
+
+
+    // {
+    //     "caption": "Open: Notes",
+    //     "command": "open_project",
+    //     "args":
+    //     {
+    //         "project": "~/notes/notes.sublime-project"
+    //     }
+    // },
 
     {
         "caption": "Terminus: Open iPython",
@@ -70,15 +89,6 @@
             "paths": ["../impl", "../include"]
         }
     },
-
-    // {
-    //     "caption": "Open: Notes",
-    //     "command": "open_project",
-    //     "args":
-    //     {
-    //         "project": "~/notes/notes.sublime-project"
-    //     }
-    // },
 
     {
         "caption": "Reveal in Sidebar",

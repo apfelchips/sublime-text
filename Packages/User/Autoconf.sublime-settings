@@ -2,6 +2,6 @@
     "extensions":
     [
         "configure",
-        "m4"
+        ".m4"
     ]
 }

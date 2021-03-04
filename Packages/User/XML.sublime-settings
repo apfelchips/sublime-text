@@ -1,10 +1,11 @@
 {
 	"extensions":
 	[
-		"dsublime-snippet",
-		"targets",
-		"wsb",
-		"csslv",
-		"var"
+		".dsublime-snippet",
+		".targets",
+		".wsb",
+		".csslv",
+		".var",
+        ".xml.dist"
 	]
 }

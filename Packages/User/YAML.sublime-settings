@@ -2,6 +2,6 @@
 	"extensions":
 	[
 		".yamllint",
-		"dist"
+		".yml.dist"
 	]
 }

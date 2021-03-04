@@ -1,12 +1,13 @@
 {
 	"extensions":
 	[
-		"conf",
+		".conf",
 		".netrc",
 		"spec",
 		".ssh-ident",
 		".clang-format",
-		"duti",
-		"lst"
+		".duti",
+		".lst",
+		".hjson"
 	]
 }
