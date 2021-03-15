@@ -104,7 +104,6 @@
 	"ignored_packages":
 	[
 		"All Autocomplete",
-		"LiveReload",
 		"SublimeLinter",
 		"SublimeLinter-chktex",
 		"SublimeLinter-contrib-bashate",
