@@ -1,8 +1,7 @@
 {
     "clients":
     {
-        "intelephense-ls":
-        {
+        "lsp-serenata":{
             "enabled": false
         },
         "phpls":
@@ -12,8 +11,11 @@
                 "~/bin/php-language-server/felixfbecker/language-server/bin/php-language-server.php",
                 "--tcp-server=127.0.0.1:5436"
             ],
-            "enabled": true,
-            "tcp_port": 5436
+            "enabled": false,
+            "tcp_port": 5436,
+            "scopes": ["source.php", "embedding.php"],
+            "syntaxes": ["Packages/PHP/PHP.sublime-syntax"],
+            "languageId": "php"
         },
         "polymer-ide":
         {

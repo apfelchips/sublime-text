@@ -7,7 +7,7 @@
         }
     },
     // https://www.sublimetext.com/docs/3/scope_naming.html
-    "selector": "text.html.basic, text.html, text.plain",
+    "selector": "text.html.basic, text.html",
     "osx":
     {
         "cmd": ["open", "-a", "/Applications/Firefox.app", "$file"]
