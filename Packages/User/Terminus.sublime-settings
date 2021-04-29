@@ -15,14 +15,14 @@
         {
             "name": "Zsh",
             "cmd": ["zsh", "-i", "-l"],
-            "env": {"TERM_PROGRAM":"Terminus-Sublime"},
+            "env": {},
             "enable": true,
             "default": true,
             "platforms": ["linux", "osx"]
         },
         {
             "name": "Powershell (Core)",
-            "cmd": "pwsh",
+            "cmd": ["pwsh", "-noLogo"],
             "env": {},
             "enable": true,
             "default": true,
@@ -38,7 +38,7 @@
         },
         {
             "name": "Powershell",
-            "cmd": "powershell.exe",
+            "cmd": ["powershell.exe", "-noLogo"],
             "env": {},
             "enable": true,
             "default": false,

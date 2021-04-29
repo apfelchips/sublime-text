@@ -2,6 +2,7 @@
 	"error_filter": "error|fail|exception|fatal",
 	"extensions":
 	[
+		"log"
 	],
 	"highlight_style": "fill",
 	"warning_filter": "warn(ing)?|not found|defer(ed)?"

@@ -1,12 +1,27 @@
 {
-	"folders": [
-        {
-            "name": "SublimeText Package Overrides",
-            "path": "../../"
-        },
+    "folders": [
         {
             "name": "SublimeText User Settings",
             "path": "../"
-		}
-	]
+        },
+        {
+            "name": "SublimeText Package Overrides",
+            "path": "../../",
+            "folder_exclude_patterns": [
+                "User",
+                ".svn",
+                ".git",
+                ".hg",
+                "CVS",
+                ".Trash",
+                "nbproject",
+                ".vscode",
+                ".Spotlight-V100",
+                ".fseventd",
+                "__pycache__",
+                "cache"
+            ]
+        }
+
+    ]
 }

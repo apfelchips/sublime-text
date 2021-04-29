@@ -39,7 +39,7 @@
 		"JsPrettier",
 		"JSX",
 		"LESS",
-		"LogView",
+		"LogViewPlus",
 		"LSP",
 		"LSP-serenata",
 		"Markdown Extended",
@@ -91,6 +91,7 @@
 	"repositories":
 	[
 		"https://github.com/apfelchips/PlainTasks",
-		"https://github.com/apfelchips/ProjectManager/tree/feature-limit-search-depth"
+		"https://github.com/apfelchips/ProjectManager/tree/feature-limit-search-depth",
+		"https://github.com/kulack/LogViewPlus"
 	]
 }
