@@ -6,7 +6,9 @@
             "enabled": false,
             "command": [
                 "php",
-                "$packages/User/serenata.phar",
+                "-d",
+                "memory_limit=1024M",
+                "${packages}/User/serenata.phar",
                 "--uri=tcp://127.0.0.1:4538"
             ],
             "tcp_port": 4538,
@@ -19,6 +21,8 @@
             "enabled": false,
             "command_win": [
                 "php",
+                "-d",
+                "memory_limit=1024M",
                 "~/bin/phpactor/bin/phpactor",
                 "language-server",
                 "--address=127.0.0.1:4537"
@@ -37,6 +41,8 @@
         {
             "command": [
                 "php",
+                "-d",
+                "memory_limit=1024M",
                 "~/bin/php-language-server/felixfbecker/language-server/bin/php-language-server.php",
                 "--tcp-server=127.0.0.1:5436"
             ],
