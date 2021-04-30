@@ -1,8 +1,6 @@
 {
-    "clients":
-    {
-        "serenata":
-        {
+    "clients": {
+        "serenata": {
             "enabled": false,
             "command": [
                 "php",
@@ -16,8 +14,7 @@
             "scopes": ["source.php", "embedding.php"],
             "syntaxes": ["Packages/PHP/PHP.sublime-syntax"]
         },
-        "phpactor":
-        {
+        "phpactor": {
             "enabled": false,
             "command_win": [
                 "php",
@@ -27,18 +24,13 @@
                 "language-server",
                 "--address=127.0.0.1:4537"
             ],
-            "command": [
-                "cmd",
-                "/c",
-                "pause"
-            ],
+            "command": ["cmd", "/c", "pause"],
             "tcp_port": 4537,
             "languageId": "php",
             "scopes": ["source.php", "embedding.php"],
             "syntaxes": ["Packages/PHP/PHP.sublime-syntax"]
         },
-        "phpls":
-        {
+        "phpls": {
             "command": [
                 "php",
                 "-d",
@@ -52,44 +44,41 @@
             "syntaxes": ["Packages/PHP/PHP.sublime-syntax"],
             "tcp_port": 5436
         },
-        "polymer-ide":
-        {
+        "polymer-ide": {
             "command": ["polymer-editor-service"],
             "enabled": false,
             "languages": [
-            {
-                "languageId": "html",
-                "scopes": ["text.html", "text.html.basic", "source.html"],
-                "syntaxes": ["Packages/HTML/HTML.sublime-syntax"]
-            },
-            {
-                "languageId": "javascript",
-                "scopes": ["source.js"],
-                "syntaxes": [
-                    "Packages/JavaScript/JavaScript.sublime-syntax"
-                ]
-            },
-            {
-                "languageId": "css",
-                "scopes": ["source.css"],
-                "syntaxes": ["Packages/CSS/CSS.sublime-syntax"]
-            },
-            {
-                "languageId": "json",
-                "scopes": ["source.json"],
-                "syntaxes": ["Packages/JavaScript/JSON.sublime-syntax"]
-            }],
-            "settings":
-            {
-                "polymer-ide":
                 {
+                    "languageId": "html",
+                    "scopes": ["text.html", "text.html.basic", "source.html"],
+                    "syntaxes": ["Packages/HTML/HTML.sublime-syntax"]
+                },
+                {
+                    "languageId": "javascript",
+                    "scopes": ["source.js"],
+                    "syntaxes": [
+                        "Packages/JavaScript/JavaScript.sublime-syntax"
+                    ]
+                },
+                {
+                    "languageId": "css",
+                    "scopes": ["source.css"],
+                    "syntaxes": ["Packages/CSS/CSS.sublime-syntax"]
+                },
+                {
+                    "languageId": "json",
+                    "scopes": ["source.json"],
+                    "syntaxes": ["Packages/JavaScript/JSON.sublime-syntax"]
+                }
+            ],
+            "settings": {
+                "polymer-ide": {
                     "analyzeWholePackage": false,
                     "fixOnSave": false
                 }
             }
         },
-        "powershell-ls":
-        {
+        "powershell-ls": {
             "command": [
                 "pwsh",
                 "-NoLogo",
@@ -124,8 +113,7 @@
                 "Packages/PowerShell/Support/PowershellSyntax.tmLanguage"
             ]
         },
-        "vscode-css":
-        {
+        "vscode-css": {
             "command": ["css-languageserver", "--stdio"],
             "enabled": false,
             "languageId": "css",
