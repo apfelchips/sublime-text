@@ -1,8 +1,37 @@
 {
     "clients":
     {
-        "lsp-serenata":{
-            "enabled": false
+        "serenata":
+        {
+            "enabled": false,
+            "command": [
+                "php",
+                "$packages/User/serenata.phar",
+                "--uri=tcp://127.0.0.1:4538"
+            ],
+            "tcp_port": 4538,
+            "languageId": "php",
+            "scopes": ["source.php", "embedding.php"],
+            "syntaxes": ["Packages/PHP/PHP.sublime-syntax"]
+        },
+        "phpactor":
+        {
+            "enabled": false,
+            "command_win": [
+                "php",
+                "~/bin/phpactor/bin/phpactor",
+                "language-server",
+                "--address=127.0.0.1:4537"
+            ],
+            "command": [
+                "cmd",
+                "/c",
+                "pause"
+            ],
+            "tcp_port": 4537,
+            "languageId": "php",
+            "scopes": ["source.php", "embedding.php"],
+            "syntaxes": ["Packages/PHP/PHP.sublime-syntax"]
         },
         "phpls":
         {
@@ -12,55 +41,37 @@
                 "--tcp-server=127.0.0.1:5436"
             ],
             "enabled": false,
-            "tcp_port": 5436,
+            "languageId": "php",
             "scopes": ["source.php", "embedding.php"],
             "syntaxes": ["Packages/PHP/PHP.sublime-syntax"],
-            "languageId": "php"
+            "tcp_port": 5436
         },
         "polymer-ide":
         {
-            "command": [
-                "polymer-editor-service"
-            ],
+            "command": ["polymer-editor-service"],
             "enabled": false,
             "languages": [
             {
                 "languageId": "html",
-                "scopes": [
-                    "text.html",
-                    "text.html.basic",
-                    "source.html"
-                ],
-                "syntaxes": [
-                    "Packages/HTML/HTML.sublime-syntax"
-                ]
+                "scopes": ["text.html", "text.html.basic", "source.html"],
+                "syntaxes": ["Packages/HTML/HTML.sublime-syntax"]
             },
             {
                 "languageId": "javascript",
-                "scopes": [
-                    "source.js"
-                ],
+                "scopes": ["source.js"],
                 "syntaxes": [
                     "Packages/JavaScript/JavaScript.sublime-syntax"
                 ]
             },
             {
                 "languageId": "css",
-                "scopes": [
-                    "source.css"
-                ],
-                "syntaxes": [
-                    "Packages/CSS/CSS.sublime-syntax"
-                ]
+                "scopes": ["source.css"],
+                "syntaxes": ["Packages/CSS/CSS.sublime-syntax"]
             },
             {
                 "languageId": "json",
-                "scopes": [
-                    "source.json"
-                ],
-                "syntaxes": [
-                    "Packages/JavaScript/JSON.sublime-syntax"
-                ]
+                "scopes": ["source.json"],
+                "syntaxes": ["Packages/JavaScript/JSON.sublime-syntax"]
             }],
             "settings":
             {
@@ -102,32 +113,18 @@
             ],
             "enabled": false,
             "languageId": "powershell",
-            "scopes": [
-                "source.powershell"
-            ],
+            "scopes": ["source.powershell"],
             "syntaxes": [
                 "Packages/PowerShell/Support/PowershellSyntax.tmLanguage"
             ]
         },
         "vscode-css":
         {
-            "command": [
-                "css-languageserver",
-                "--stdio"
-            ],
+            "command": ["css-languageserver", "--stdio"],
             "enabled": false,
             "languageId": "css",
-            "scopes": [
-                "source.css"
-            ],
-            "syntaxes": [
-                "Packages/CSS/CSS.sublime-syntax"
-            ]
+            "scopes": ["source.css"],
+            "syntaxes": ["Packages/CSS/CSS.sublime-syntax"]
         }
     }
-    // "log_debug": true,
-    // "log_server": [
-    //     "panel"
-    // ],
-    // "log_stderr": true
 }
