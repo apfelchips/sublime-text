@@ -98,7 +98,7 @@
 		"cache"
 	],
 	"font_face": "Menlo Regular for Powerline",
-	"font_size": 12,
+	"font_size": 15,
 	"highlight_modified_tabs": true,
 	"hot_exit": false,
 	"ignored_packages":

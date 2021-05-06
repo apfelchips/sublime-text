@@ -6,6 +6,8 @@ oscrypto-ca-bundle.crt
 Color Highlighter/
 Color Schemes/RainbowBrackets
 
+GitSavvy/
+
 *.log
 *.log/
 *.cache
