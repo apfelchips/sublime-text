@@ -1,4 +1,6 @@
 {
+    "log_debug": true,
+
     "clients": {
         "serenata": {
             "enabled": false,
@@ -6,7 +8,7 @@
                 "php",
                 "-d",
                 "memory_limit=1024M",
-                "${packages}/User/serenata.phar",
+                "${packages}/bin/serenata.phar",
                 "--uri=tcp://127.0.0.1:4538"
             ],
             "tcp_port": 4538,
@@ -16,15 +18,14 @@
         },
         "phpactor": {
             "enabled": false,
-            "command_win": [
+            "command": [
                 "php",
                 "-d",
                 "memory_limit=1024M",
-                "~/bin/phpactor/bin/phpactor",
+                "${packages}/bin/phpactor/bin/phpactor",
                 "language-server",
                 "--address=127.0.0.1:4537"
             ],
-            "command": ["cmd", "/c", "pause"],
             "tcp_port": 4537,
             "languageId": "php",
             "scopes": ["source.php", "embedding.php"],
@@ -39,10 +40,10 @@
                 "--tcp-server=127.0.0.1:5436"
             ],
             "enabled": false,
+            "tcp_port": 5436,
             "languageId": "php",
             "scopes": ["source.php", "embedding.php"],
-            "syntaxes": ["Packages/PHP/PHP.sublime-syntax"],
-            "tcp_port": 5436
+            "syntaxes": ["Packages/PHP/PHP.sublime-syntax"]
         },
         "polymer-ide": {
             "command": ["polymer-editor-service"],

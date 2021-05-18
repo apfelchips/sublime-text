@@ -8,6 +8,9 @@
 !Default/
 !Default/**
 
+!bin/
+!bin/**
+
 !Phpcs
 !Phpcs/Side Bar.sublime-menu
 
