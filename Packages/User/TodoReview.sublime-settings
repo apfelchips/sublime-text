@@ -23,11 +23,15 @@
         "*tinymce*",
         "*videojs*",
         "*flowplayer*",
-        "*plyr*"
+        "*plyr*",
+        "*external*",
+        "*build*",
+        "*tools*"
     ],
     "exclude_files": [
         "*.sublime-workspace",
-        "*.sublime-project"
+        "*.sublime-project",
+        "*.log"
     ],
     "resolve_symlinks": true,
     "case_sensitive": false,

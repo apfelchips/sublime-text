@@ -104,17 +104,6 @@
 	"ignored_packages":
 	[
 		"All Autocomplete",
-		"PlainTasks",
-		"SublimeLinter",
-		"SublimeLinter-chktex",
-		"SublimeLinter-contrib-bashate",
-		"SublimeLinter-contrib-markdownlint",
-		"SublimeLinter-csslint",
-		"SublimeLinter-eslint",
-		"SublimeLinter-json",
-		"SublimeLinter-php",
-		"SublimeLinter-phpcs",
-		"SublimeLinter-xmllint",
 		"Swift",
 		"Vintage"
 	],

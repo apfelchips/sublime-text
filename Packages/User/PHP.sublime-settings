@@ -2,6 +2,7 @@
 	"extensions":
 	[
 		".php_cs",
-		"php"
-	]
+        "php.dist",
+        "php"
+    ]
 }
