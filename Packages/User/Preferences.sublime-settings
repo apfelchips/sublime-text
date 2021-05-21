@@ -97,8 +97,8 @@
 		"__pycache__",
 		"cache"
 	],
-	"font_face": "Menlo Regular for Powerline",
-	"font_size": 15,
+	"font_face": "Meslo LG M DZ for Powerline",
+	"font_size": 13,
 	"highlight_modified_tabs": true,
 	"hot_exit": false,
 	"ignored_packages":
@@ -119,7 +119,7 @@
 		"*.log"
 	],
 	"jsoncomma_on_save": true,
-	"revert_font_size": 12,
+	"revert_font_size": 13,
 	"rulers":
 	[
 		80,

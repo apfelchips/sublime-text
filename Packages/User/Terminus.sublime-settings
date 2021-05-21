@@ -120,7 +120,7 @@
     "view_settings": {
         // these are extra view settings which are passed to the terminus_view,
         // you could change settings like "font_face", "font_size" and paddings.
-        // "font_face": "Meslo for Powerline",
+        // "font_face": "Meslo LG M DZ for Powerline",
         "font_size": 13
     },
 
