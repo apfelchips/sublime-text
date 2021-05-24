@@ -1,62 +1,44 @@
-[   // defualts: https://github.com/twolfson/sublime-files/blob/master/Packages/Default/Default%20(Linux).sublime-mousemap
+[
+    // defualts: https://github.com/twolfson/sublime-files/blob/master/Packages/Default/Default%20(Linux).sublime-mousemap
     // "primary" doesn't work as a mousemap modifier
     {
         "button": "button1",
         "count": 1,
-        "modifiers": [
-            "ctrl"
-        ],
+        "modifiers": ["ctrl"],
         "press_command": "drag_select",
-        "command": "chain",
+        "command": "multicommand",
         "args": {
             "commands": [
-                [
-                    "open_url_under_cursor"
-                ],
-                [
-                    "open_path_strings"
-                ]
+                {
+                    "command": "goto_definition"
+                },
+                {
+                    "command": "open_url_under_cursor"
+                },
+                {
+                    "command": "open_path_strings"
+                }
             ]
         }
     },
     {
         "button": "button1",
         "count": 1,
-        "modifiers": [
-            "ctrl","shift"
-        ],
+        "modifiers": ["ctrl", "shift"],
         "press_command": "drag_select",
-        "command": "chain",
+        "command": "multicommand",
         "args": {
             "commands": [
-                [
-                    "dash_doc"
-                ]
-            ]
-        }
-    },
-    {
-        "button": "button1",
-        "count": 1,
-        "modifiers": [
-            "ctrl","alt"
-        ],
-        "press_command": "drag_select",
-        "command": "chain",
-        "args": {
-            "commands": [
-                [
-                    "goto_definition"
-                ]
+                {
+                    "command": "dash_doc"
+                }
             ]
         }
     },
     {
         "button": "button2",
         "count": 1,
-        "modifiers": [
-            "ctrl"
-        ],
+        "modifiers": ["ctrl"],
         "command": "jump_back"
     },
     {
@@ -64,28 +46,29 @@
         "count": 1,
         "press_command": "drag_select",
         "modifiers": [],
-        "command": "chain",
+        "command": "multicommand",
         "args": {
             "commands": [
-                [
-                    "open_url_under_cursor"
-                ]
+                {
+                    "command": "open_url_under_cursor"
+                },
+                {
+                    "command": "open_path_strings"
+                }
             ]
         }
     },
     {
         "button": "button3",
         "count": 1,
-        "modifiers": [
-            "ctrl"
-        ],
+        "modifiers": ["ctrl"],
         "press_command": "drag_select",
-        "command": "chain",
+        "command": "multicommand",
         "args": {
             "commands": [
-                [
-                    "dash_doc"
-                ]
+                {
+                    "command": "dash_doc"
+                }
             ]
         }
     }
