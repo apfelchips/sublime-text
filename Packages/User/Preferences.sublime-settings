@@ -94,12 +94,12 @@
         "cache"
     ],
     "font_face": "Meslo LG M DZ for Powerline",
-    "font_size": 13,
+    "font_size": 12,
     "highlight_modified_tabs": true,
     "hot_exit": false,
     "ignored_packages": [
         "All Autocomplete",
-        "SnippetMaker"
+        "SnippetMaker",
     ],
     "indent_to_bracket": true,
     "index_exclude_patterns": [

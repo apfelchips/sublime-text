@@ -66,7 +66,7 @@
         "args":
         {
             "cmd": ["ipython"],
-            "cwd": "${file_path:${project}}",
+            "cwd": "${file_path:${project:-$folder}}",
             "title": "iPython"
         }
     },
@@ -105,7 +105,6 @@
         "caption": "Fold: Tag Attributes",
         "command": "fold_tag_attributes"
     },
-
     {
         "caption": "Fold: Level 1 - Classes",
         "command": "fold_by_level",
@@ -128,6 +127,14 @@
         "args":
         {
             "level": 3
+        }
+    },
+    {
+        "caption": "Fold: Level 4",
+        "command": "fold_by_level",
+        "args":
+        {
+            "level": 4
         }
     },
     {

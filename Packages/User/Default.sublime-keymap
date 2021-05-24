@@ -1,57 +1,57 @@
-[   // https://www.sublimetext.com/docs/3/key_bindings.html
+[
+    // https://www.sublimetext.com/docs/3/key_bindings.html
     // http://docs.sublimetext.info/en/latest/customization/key_bindings.html
     // http://docs.sublimetext.info/en/latest/reference/commands.html
     // examples: https://github.com/fjl/Sublime-Missing-Palette-Commands/blob/st3/Missing.sublime-commands
     //
     // show executed commands: sublime.log_commands(True);
 
-    { // font size reset with revert_font_size.py
+    {
+        // font size reset with revert_font_size.py
         "keys": ["primary+0"],
         "command": "revert_font_size"
     },
 
-
-    { // open with default
+    {
+        // open with default
         "keys": ["primary+d"],
         "command": "open_default_for_current_view"
     },
 
-
-    { // manage comments
+    {
+        // manage comments
         "keys": ["primary+7"],
         "command": "toggle_comment",
-        "args":
-        {
+        "args": {
             "block": true
         }
     },
     {
         "keys": ["primary+shift+7"],
         "command": "toggle_comment",
-        "args":
-        {
+        "args": {
             "block": false
         }
     },
 
-    { // code indentation
+    {
+        // code indentation
         "keys": ["f12"],
         "command": "reindent",
-        "args":
-        {
+        "args": {
             "single_line": false
         }
     },
 
-    { // PHP
+    {
+        // PHP
         "keys": ["f6"],
         "command": "expand_fqcn"
     },
     {
         "keys": ["shift+f6"],
         "command": "expand_fqcn",
-        "args":
-        {
+        "args": {
             "leading_separator": true
         }
     },
@@ -76,6 +76,43 @@
         "command": "insert_php_constructor_property"
     },
 
+    {
+        "keys": ["alt+1"],
+        "command": "fold_by_level",
+        "args": {
+            "level": 1
+        }
+    },
+    {
+        "keys": ["alt+2"],
+        "command": "fold_by_level",
+        "args": {
+            "level": 2
+        }
+    },
+    {
+        "keys": ["alt+3"],
+        "command": "fold_by_level",
+        "args": {
+            "level": 3
+        }
+    },
+    {
+        "keys": ["alt+4"],
+        "command": "fold_by_level",
+        "args": {
+            "level": 4
+        }
+    },
+
+    {
+        "keys": ["alt+="],
+        "command": "fold_all"
+    },
+    {
+        "keys": ["alt+-"],
+        "command": "unfold_all"
+    },
 
     // { // Quit everything
     //     "keys": ["alt+f4"],
@@ -119,32 +156,33 @@
     {
         "keys": ["primary+shift+alt+p"],
         "command": "project_manager",
-        "args":
-        {
+        "args": {
             "action": "switch"
         }
     },
 
-
-    { //undo close tab
+    {
+        //undo close tab
         "keys": ["primary+shift+t"],
         "command": "scb_undo_tab"
     },
 
-    { // goto file
+    {
+        // goto file
         "keys": ["primary+shift+g"],
         "command": "open_file_folder"
     },
-    { // goto project
+    {
+        // goto project
         "keys": ["primary+shift+alt+g"],
         "command": "open_project_folder"
     },
 
-    { // always use the "replace" search panel
+    {
+        // always use the "replace" search panel
         "keys": ["primary+f"],
         "command": "show_panel",
-        "args":
-        {
+        "args": {
             "panel": "replace",
             "reverse": false
         }
@@ -154,30 +192,26 @@
     {
         "keys": ["alt+tab"],
         "command": "focus_file_on_sidebar",
-        "args":
-        {}
+        "args": {}
     },
     {
         "keys": ["alt+shift+tab"],
         "command": "toggle_minimap",
-        "args":
-        {}
+        "args": {}
     },
 
     // Settings Shortcuts
     {
         "keys": ["primary+,"],
         "command": "edit_settings ",
-        "args":
-        {
+        "args": {
             "base_file": "${packages}/Default/Preferences.sublime-settings"
         }
     },
     {
         "keys": ["primary+alt+,"],
         "command": "edit_settings ",
-        "args":
-        {
+        "args": {
             "base_file": "${packages}/Default/Default ($platform).sublime-keymap"
         }
     },
@@ -185,8 +219,7 @@
     {
         "keys": ["primary+shift+,"],
         "command": "edit_settings ",
-        "args":
-        {
+        "args": {
             "base_file": "${packages}/Default/Default.sublime-commands"
         }
     },
@@ -194,52 +227,54 @@
     {
         "keys": ["primary+shift+alt+,"],
         "command": "edit_settings ",
-        "args":
-        {
+        "args": {
             "base_file": "${packages}/Default/Default ($platform).sublime-mousemap"
         }
     },
 
-
-    { // deselect selection with escape
+    {
+        // deselect selection with escape
         "keys": ["escape"],
         "command": "deselect",
         "context": [
-        {
-            "key": "selection_empty",
-            "operator": "equal",
-            "operand": false,
-            "match_all": true
-        }]
+            {
+                "key": "selection_empty",
+                "operator": "equal",
+                "operand": false,
+                "match_all": true
+            }
+        ]
     },
 
-
-    { // external Terminal
+    {
+        // external Terminal
         "keys": ["primary+shift+`"],
         "command": "open_terminal_project_folder"
     },
 
-    { // Terminus Panel
+    {
+        // Terminus Panel https://github.com/randy3k/Terminus#user-key-bindings
+
         "keys": ["alt+`"],
         "command": "toggle_terminus_panel",
-        "args":
-        {
+        "args": {
             "config_name": "Default",
-            "cwd": "${file_path:${project}}"
+            "cwd": "${file_path:${project:-$folder}}"
         }
     },
 
-    { // Terminus Page
+    {
+        // Terminus Page
         "keys": ["shift+alt+`"],
         "command": "terminus_open",
-        "args":
-        {
+        "args": {
             "config_name": "Default",
-            "cwd": "${file_path:${project}}"
+            "cwd": "${file_path:${project:-$folder}}"
         }
     },
 
-    { // lookup with dash doc / zeal
+    {
+        // lookup with dash doc / zeal
         "keys": ["primary+shift+/"],
         "command": "dash_doc"
     },
@@ -247,27 +282,42 @@
     {
         "keys": ["alt+h"], // aka. header
         "command": "switch_file_deluxe",
-        "args":
-        {
-            "extensions": [".cpp", ".cxx", ".cc", ".c", "Qt.cpp", "Qt.h", ".hpp", ".hxx", ".h", "_p.h", "_p_p.h", ".ipp", ".inl", ".m", ".mm"],
+        "args": {
+            "extensions": [
+                ".cpp",
+                ".cxx",
+                ".cc",
+                ".c",
+                "Qt.cpp",
+                "Qt.h",
+                ".hpp",
+                ".hxx",
+                ".h",
+                "_p.h",
+                "_p_p.h",
+                ".ipp",
+                ".inl",
+                ".m",
+                ".mm"
+            ],
             "paths": ["../impl", "../include"]
         }
     },
 
-    { // add newline
+    {
+        // add newline
         "keys": ["shift+enter"],
         "command": "run_macro_file",
-        "args":
-        {
+        "args": {
             "file": "res://Packages/User/Macros/new_unindented_line_before.sublime-macro"
         }
     },
 
-    { // mirrors shift+delete
+    {
+        // mirrors shift+delete
         "keys": ["shift+backspace"],
         "command": "run_macro_file",
-        "args":
-        {
+        "args": {
             "file": "res://Packages/Default/Delete to EOL.sublime-macro"
         }
     },
@@ -275,8 +325,7 @@
     {
         "keys": ["alt+space"],
         "command": "show_overlay",
-        "args":
-        {
+        "args": {
             "overlay": "goto",
             "show_files": true
         }
@@ -288,32 +337,28 @@
     {
         "keys": ["alt+shift+h"],
         "command": "travel_to_pane",
-        "args":
-        {
+        "args": {
             "direction": "left"
         }
     },
     {
         "keys": ["alt+shift+j"],
         "command": "travel_to_pane",
-        "args":
-        {
+        "args": {
             "direction": "down"
         }
     },
     {
         "keys": ["alt+shift+k"],
         "command": "travel_to_pane",
-        "args":
-        {
+        "args": {
             "direction": "up"
         }
     },
     {
         "keys": ["alt+shift+l"],
         "command": "travel_to_pane",
-        "args":
-        {
+        "args": {
             "direction": "right"
         }
     },
@@ -321,8 +366,7 @@
     {
         "keys": ["alt+shift+w"],
         "command": "destroy_pane",
-        "args":
-        {
+        "args": {
             "direction": "self"
         }
     },
@@ -331,32 +375,28 @@
     {
         "keys": ["primary+alt+shift+h"],
         "command": "destroy_pane",
-        "args":
-        {
+        "args": {
             "direction": "left"
         }
     },
     {
         "keys": ["primary+alt+shift+j"],
         "command": "destroy_pane",
-        "args":
-        {
+        "args": {
             "direction": "down"
         }
     },
     {
         "keys": ["primary+alt+shift+k"],
         "command": "destroy_pane",
-        "args":
-        {
+        "args": {
             "direction": "up"
         }
     },
     {
         "keys": ["primary+alt+shift+l"],
         "command": "destroy_pane",
-        "args":
-        {
+        "args": {
             "direction": "right"
         }
     }
