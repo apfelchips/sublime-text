@@ -30,7 +30,7 @@
                     "command": "open_url_under_cursor"
                 },
                 {
-                    "command": "open_path_strings"
+                    "command": "open_context_path"
                 }
             ]
         }
@@ -42,7 +42,9 @@
         "press_command": "drag_select",
         "command": "multicommand",
         "args": {
-            "commands": [["dash_doc"]]
+            "commands": [
+                {"command": "dash_doc"}
+            ]
         }
     },
     {
