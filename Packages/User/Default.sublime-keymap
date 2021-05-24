@@ -259,7 +259,7 @@
         "command": "toggle_terminus_panel",
         "args": {
             "config_name": "Default",
-            "cwd": "${file_path:${project:-$folder}}"
+            "cwd": "${file_path:${project}}"
         }
     },
 
@@ -269,7 +269,7 @@
         "command": "terminus_open",
         "args": {
             "config_name": "Default",
-            "cwd": "${file_path:${project:-$folder}}"
+            "cwd":" ${file_path:${project}}"
         }
     },
 
