@@ -5,7 +5,14 @@
     // examples: https://github.com/fjl/Sublime-Missing-Palette-Commands/blob/st3/Missing.sublime-commands
     //
     // show executed commands: sublime.log_commands(True);
-
+    {
+        "keys": ["ctrl+tab"],
+        "command": "next_view"
+    },
+    {
+        "keys": ["ctrl+shift+tab"],
+        "command": "prev_view"
+    },
     {
         // font size reset with revert_font_size.py
         "keys": ["primary+0"],
@@ -269,7 +276,7 @@
         "command": "terminus_open",
         "args": {
             "config_name": "Default",
-            "cwd":" ${file_path:${project}}"
+            "cwd": " ${file_path:${project}}"
         }
     },
 

@@ -7,7 +7,7 @@
             "command": [
                 "php",
                 "-d",
-                "memory_limit=1024M",
+                "memory_limit=2048M",
                 "${packages}/bin/serenata.phar",
                 "--uri=tcp://127.0.0.1:4538"
             ],
@@ -21,7 +21,7 @@
             "command": [
                 "php",
                 "-d",
-                "memory_limit=1024M",
+                "memory_limit=2048M",
                 "${packages}/bin/phpactor/bin/phpactor",
                 "language-server",
                 "--address=127.0.0.1:4537"
@@ -35,7 +35,7 @@
             "command": [
                 "php",
                 "-d",
-                "memory_limit=1024M",
+                "memory_limit=2048M",
                 "~/bin/php-language-server/felixfbecker/language-server/bin/php-language-server.php",
                 "--tcp-server=127.0.0.1:5436"
             ],

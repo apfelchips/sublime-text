@@ -50,7 +50,6 @@
 		"Origami",
 		"Package Control",
 		"PackageResourceViewer",
-		"PHP CS Fixer",
 		"Phpcs",
 		"PlainTasks",
 		"PowerShell",
@@ -76,7 +75,7 @@
 		"Undo Close Tab",
 		"VBScript",
 		"VimL",
-		"Vue Syntax Highlight"
+		"Vue Syntax Highlight",
 	],
 	"repositories":
 	[

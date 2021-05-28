@@ -1,5 +1,6 @@
 { // doc: https://github.com/benmatselby/sublime-phpcs/blob/master/phpcs.sublime-settings
-    "show_debug": true,
+    "show_debug": false,
+    "php_cs_fixer_on_save": true,
 
     // https://github.com/squizlabs/PHP_CodeSniffer/wiki/Configuration-Options
     // https://manpages.debian.org/testing/php-codesniffer/phpcs.1.en.html
@@ -12,5 +13,9 @@
     // https://cs.symfony.com/doc/usage.html
     "php_cs_fixer_additional_args":
     {
-    }
+    },
+    "extensions_to_blacklist": ["twig.php"],
+    "exclude": [
+        "vendor"
+    ]
 }
