@@ -1,5 +1,36 @@
 {
     "color_scheme": "Monokai.sublime-color-scheme",
+    "highlight_modified_tabs": true,
+    "auto_find_in_selection": true,
+    "find_selected_text": false,
+    "auto_match_enabled": false,
+
+    "font_face": "Meslo LG M DZ for Powerline",
+    "font_size": 13,
+    "revert_font_size": 13,
+    "rulers": [80, 120, 160],
+    "fade_fold_buttons": false,
+    "word_wrap": "false",
+    "show_encoding": true,
+    "show_full_path": true,
+    "show_line_endings": true,
+
+    "hot_exit": false,
+    "close_windows_when_empty": false,
+
+    "default_line_ending": "unix",
+    "ensure_newline_at_eof_on_save": true,
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true,
+    "indent_to_bracket": true,
+
+    "vintage_use_clipboard": true,
+    "jsoncomma_on_save": true,
+    "ignored_packages": [
+        "All Autocomplete",
+        "SnippetMaker"
+    ],
+
     // "auto_complete_selector": "meta.tag - punctuation.definition.tag.begin, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
     // "auto_complete_triggers": [
     // {
@@ -14,9 +45,44 @@
     //     "characters": "\\",
     //     "selector": "text.tex.latex"
     // }],
-    "auto_find_in_selection": true,
-    "auto_match_enabled": false,
+    "folder_exclude_patterns": [
+        ".svn",
+        ".git",
+        ".hg",
+        "CVS",
+        ".Trash",
+        "nbproject",
+        ".vscode",
+        ".Spotlight-V100",
+        ".fseventd",
+        "__pycache__",
+        "cache"
+    ],
+
+    "index_exclude_patterns": [
+        "*cache/*",
+        "*/.npm/*",
+        "*.noindex/*",
+        "*/*.app/*",
+        "*.cache",
+        "*.rcache",
+        "*.log"
+    ],
+
+    "open_externally_patterns":[
+        // Non Text Files Setting
+        "*.jpg",
+        "*.jpeg",
+        "*.png",
+        "*.gif",
+        "*.zip",
+        "*.pdf",
+        "*.svg"
+    ],
+
     "binary_file_patterns": [
+        // Files matching these wildcards will show up in the side bar,
+        // but will be excluded from Goto Anything and Find in Files.
         "*.jpg",
         "*.jpeg",
         "*.png",
@@ -54,11 +120,7 @@
         "*.db",
         "*.sqlite"
     ],
-    "close_windows_when_empty": false,
-    "default_line_ending": "unix",
-    "dictionary": "Packages/User/de_DE.dic",
-    "ensure_newline_at_eof_on_save": true,
-    "fade_fold_buttons": false,
+
     "file_exclude_patterns": [
         "*.pyc",
         "*.pyo",
@@ -78,47 +140,5 @@
         ".DS_Store",
         "*.class",
         "*.sublime-workspace"
-    ],
-    "find_selected_text": false,
-    "folder_exclude_patterns": [
-        ".svn",
-        ".git",
-        ".hg",
-        "CVS",
-        ".Trash",
-        "nbproject",
-        ".vscode",
-        ".Spotlight-V100",
-        ".fseventd",
-        "__pycache__",
-        "cache"
-    ],
-    "font_face": "Meslo LG M DZ for Powerline",
-    "font_size": 13,
-    "highlight_modified_tabs": true,
-    "hot_exit": false,
-    "ignored_packages": [
-        "All Autocomplete",
-        "SnippetMaker",
-    ],
-    "indent_to_bracket": true,
-    "index_exclude_patterns": [
-        "*cache/*",
-        "*/.npm/*",
-        "*.noindex/*",
-        "*/*.app/*",
-        "*.cache",
-        "*.rcache",
-        "*.log"
-    ],
-    "jsoncomma_on_save": true,
-    "revert_font_size": 13,
-    "rulers": [80, 120, 160],
-    "show_encoding": true,
-    "show_full_path": true,
-    "show_line_endings": true,
-    "translate_tabs_to_spaces": true,
-    "trim_trailing_white_space_on_save": true,
-    "vintage_use_clipboard": true,
-    "word_wrap": "false",
+    ]
 }
