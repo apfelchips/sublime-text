@@ -28,6 +28,10 @@
     "jsoncomma_on_save": true,
     "ignored_packages": [
         "All Autocomplete",
+        "FuzzyFilePath",
+        "HexViewer",
+        "PackageResourceViewer",
+        "ScopeHunter",
     ],
 
     // "auto_complete_selector": "meta.tag - punctuation.definition.tag.begin, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
