@@ -15,7 +15,7 @@
     "show_full_path": true,
     "show_line_endings": true,
 
-    "hot_exit": true,
+    "hot_exit": false,
     "close_windows_when_empty": true,
 
     "default_line_ending": "unix",
