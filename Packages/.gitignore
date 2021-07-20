@@ -20,5 +20,8 @@
 !Phpcs
 !Phpcs/Side Bar.sublime-menu
 
+!Powershell/
+!Powershell/**
+
 !TodoReview
 !TodoReview/Side Bar.sublime-menu
