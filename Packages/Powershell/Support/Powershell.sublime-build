@@ -1,4 +1,4 @@
-{ // override!!!
+{
     "cmd": ["pwsh", "-noprofile", "-ExecutionPolicy", "Bypass", "-file", "$file"],
     "selector": "source.powershell",
 
