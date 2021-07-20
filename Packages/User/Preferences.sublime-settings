@@ -15,7 +15,7 @@
     "show_full_path": true,
     "show_line_endings": true,
 
-    "hot_exit": false,
+    "hot_exit": true,
     "close_windows_when_empty": true,
 
     "default_line_ending": "unix",
@@ -28,10 +28,13 @@
     "jsoncomma_on_save": true,
     "ignored_packages": [
         "All Autocomplete",
+        "Color Highlight",
         "FuzzyFilePath",
         "HexViewer",
         "PackageResourceViewer",
         "ScopeHunter",
+        "Swift",
+        "Vue Syntax Highlight",
     ],
 
     // "auto_complete_selector": "meta.tag - punctuation.definition.tag.begin, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
