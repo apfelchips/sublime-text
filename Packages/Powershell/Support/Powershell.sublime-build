@@ -1,8 +1,32 @@
+// http://sublimetext.info/docs/en/reference/build_systems.html
 {
-    "cmd": ["pwsh", "-noprofile", "-ExecutionPolicy", "Bypass", "-file", "$file"],
+    // https://www.sublimetext.com/docs/3/build_systems.html#exec_options
+    // https://github.com/randy3k/Terminus#terminus-build-system
+    "target": "terminus_exec",
+    "cancel": "terminus_cancel_build",
+    // https://www.sublimetext.com/docs/3/scope_naming.html
     "selector": "source.powershell",
-
-    "windows": {
-        "cmd": ["powershell.exe", "-noprofile", "-ExecutionPolicy", "Bypass", "-file", "$file"],
+    "working_dir": "$folder",
+    "osx":
+    {
+        "cmd": ["pwsh", "-noLogo", "-noprofile", "-file", "$file"]
+    },
+    "linux":
+    {
+        "cmd": ["pwsh", "-noLogo", "-noprofile", "-file", "$file"]
+    },
+    "windows":
+    {
+        "cmd": ["powershell.exe", "-noLogo", "-noprofile", "-ExecutionPolicy", "Bypass", "-file", "$file"]
     }
-}
+},
+
+// original: https://github.com/SublimeText/PowerShell/blob/master/Support/Powershell.sublime-build
+// {
+//     "cmd": ["pwsh", "-noprofile", "-ExecutionPolicy", "Bypass", "-file", "$file"],
+//     "selector": "source.powershell",
+
+//     "windows": {
+//         "cmd": ["powershell.exe", "-noprofile", "-ExecutionPolicy", "Bypass", "-file", "$file"]
+//     }
+// }
