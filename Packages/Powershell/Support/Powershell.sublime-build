@@ -3,9 +3,9 @@
 {
     // https://www.sublimetext.com/docs/3/build_systems.html#exec_options
     // https://github.com/randy3k/Terminus#terminus-build-system
-    // "target": "terminus_exec",
-    // "cancel": "terminus_cancel_build",
-    // "working_dir": "$folder",
+    "target": "terminus_exec",
+    "cancel": "terminus_cancel_build",
+    "working_dir": "$folder",
     // https://www.sublimetext.com/docs/3/scope_naming.html
     "selector": "source.powershell",
     "osx": {
