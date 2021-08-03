@@ -1,4 +1,8 @@
-{
-  "terminal": "C:\\Program Files\\ConEmu\\ConEmu64.exe",
-  "parameters": ["-Dir", "%CWD%"]
+{ // doc: https://github.com/wbond/sublime_terminal#examples
+    //"terminal": "C:\\Program Files\\ConEmu\\ConEmu64.exe",
+    //"parameters": ["-Dir", "%CWD%"]
+    // "terminal": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    // "parameters": ["-window", "hidden", "-noProfile", "-command", "Start-Process -FilePath ${env:LocalAppData}\\Microsoft\\WindowsApps\\wt.exe -ArgumentList" ]
+    "terminal": "C:\\WINDOWS\\system32\\cmd.exe",
+    "parameters": ["/c", "%LocalAppData%\\Microsoft\\WindowsApps\\wt.exe", "-d ."]
 }
