@@ -50,6 +50,7 @@
 		"PackageResourceViewer",
 		"Phpcs",
 		"PlainTasks",
+		"PowerShell",
 		"ProjectManager",
 		"Python 3",
 		"RainbowBrackets",
@@ -77,6 +78,7 @@
 	[
 		"https://github.com/apfelchips/PlainTasks",
 		"https://github.com/apfelchips/ProjectManager/tree/feature-limit-search-depth",
-		"https://github.com/kulack/LogViewPlus"
+		"https://github.com/kulack/LogViewPlus",
+		"https://github.com/apfelchips/PowerShell",
 	],
 }
