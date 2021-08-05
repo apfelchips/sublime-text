@@ -5,7 +5,6 @@
 		"rmd",
 		"markdown",
 		"mark",
-		"md"
 	],
-	"trim_trailing_white_space_on_save": false
+	"trim_trailing_white_space_on_save": false,
 }
