@@ -1,7 +1,7 @@
 {
     // A list of folders containing *.sublime-project files, e.g.,
     // "projects_path": ["path/to/custom/Projects", "another_path/to/Projects"]
-    "projects_path": ["~/Projects/","~/notes/","~/devel/","~/ports/","~/www/","${packages}/User/Projects"],
+    "projects_path": ["~/Projects/","~/Nextcloud/notes/","~/Nextcloud/projects/","~/devel/","~/ports/","~/www/","${packages}/User/Projects"],
 
     // how deep to look inside project_path directories for .sublime-project files (-1 for no limit)
     "search_depth": 2,
