@@ -3,15 +3,15 @@ Package Control.merged-ca-bundle
 oscrypto-ca-bundle.crt
 *.user-ca-bundle
 
-Color Highlighter/
-Color Schemes/RainbowBrackets
-
-GitSavvy/
+Color Highlighter/*
+Color Schemes/RainbowBrackets/*
+GitSavvy/*
+Terminus/*
 
 *.log
-*.log/
+*.log/*
 *.cache
-*.cache/
+*.cache/*
 
 .DS_Store
 
