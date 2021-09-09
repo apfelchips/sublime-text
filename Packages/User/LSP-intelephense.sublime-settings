@@ -1,0 +1,12 @@
+{
+    "initializationOptions": {
+        "clearCache": false,
+        // "storagePath": "${temp_dir}/intelephense",
+        // "globalStoragePath": "${home}/.intelephense",
+
+        "licenceKey": "00QJVMJS5RJJQE8"
+    },
+    // https://github.com/bmewburn/vscode-intelephense/blob/master/package.json
+    "settings": {
+    }
+}

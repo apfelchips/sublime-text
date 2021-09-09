@@ -1,8 +1,7 @@
 {
     "log_debug": true,
-
     "clients": {
-        "serenata": {
+        "serenata": { //https://gitlab.com/Serenata/Serenata/-/tags
             "enabled": false,
             "command": [
                 "php",
@@ -13,6 +12,9 @@
             ],
             "tcp_port": 4538,
             "languageId": "php",
+            "initializationOptions": {
+                "rootUri": ""
+            },
             "scopes": ["source.php", "embedding.php"],
             "syntaxes": ["Packages/PHP/PHP.sublime-syntax"]
         },
