@@ -5,6 +5,7 @@
 	],
 	"installed_packages":
 	[
+		"ActivityWatch Watcher",
 		"AddRemoveFolder",
 		"AdvancedNewFile",
 		"All Autocomplete",
@@ -66,6 +67,7 @@
 		"Switch File Deluxe",
 		"Terminal",
 		"Terminus",
+		"Terraform",
 		"TodoReview",
 		"TodoTxt Syntax",
 		"TOML",

@@ -280,13 +280,6 @@
         }
     },
 
-
-    {
-        // external Terminal alt
-        "keys": ["primary+shift+t"],
-        "command": "open_terminal_project_folder"
-    },
-
     {
         // Terminus Panel alt https://github.com/randy3k/Terminus#user-key-bindings
 
