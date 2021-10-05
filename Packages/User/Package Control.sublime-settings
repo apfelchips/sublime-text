@@ -42,6 +42,8 @@
 		"LogViewPlus",
 		"LSP",
 		"LSP-intelephense",
+		"LSP-PowerShellEditorServices",
+		"LSP-pyright",
 		"Missing Palette Commands",
 		"Non Text Files",
 		"Open Folder",
