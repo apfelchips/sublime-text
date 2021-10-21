@@ -37,6 +37,11 @@
     },
 
     {
+        "caption": "Clear Console",
+        "command": "clear_console"
+    },
+
+    {
         "caption": "Enter Sublime License",
         "command": "show_license_window"
     },
@@ -60,16 +65,16 @@
     //     }
     // },
 
-    {
-        "caption": "Terminus: Open iPython",
-        "command": "terminus_open",
-        "args":
-        {
-            "cmd": ["ipython"],
-            "cwd": "${file_path:${project}}",
-            "title": "iPython"
-        }
-    },
+    // {
+    //     "caption": "Terminus: Open iPython",
+    //     "command": "terminus_open",
+    //     "args":
+    //     {
+    //         "cmd": ["ipython"],
+    //         "cwd": "${file_path:${project}}",
+    //         "title": "iPython"
+    //     }
+    // },
 
     { // FileDiff extension
         "caption": "Diff current with saved",
