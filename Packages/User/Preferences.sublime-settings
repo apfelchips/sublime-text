@@ -14,10 +14,8 @@
     "show_encoding": true,
     "show_full_path": true,
     "show_line_endings": true,
-
     "hot_exit": false,
     "close_windows_when_empty": true,
-
     "default_line_ending": "unix",
     "ensure_newline_at_eof_on_save": true,
     "translate_tabs_to_spaces": true,
@@ -26,26 +24,8 @@
 
     "vintage_use_clipboard": true,
     "jsoncomma_on_save": true,
-    "ignored_packages": [
-        "All Autocomplete",
-        "FuzzyFilePath",
-        "JSX",
-        "ScopeHunter",
-    ],
-    // "auto_complete_selector": "meta.tag - punctuation.definition.tag.begin, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
-    // "auto_complete_triggers": [
-    // {
-    //     "characters": "<",
-    //     "selector": "text.html, text.xml"
-    // },
-    // {
-    //     "characters": "{",
-    //     "selector": "text.html.twig"
-    // },
-    // {
-    //     "characters": "\\",
-    //     "selector": "text.tex.latex"
-    // }],
+    "ignored_packages": ["All Autocomplete"],
+
     "folder_exclude_patterns": [
         ".svn",
         ".git",
@@ -70,7 +50,7 @@
         "*.log"
     ],
 
-    "open_externally_patterns":[
+    "open_externally_patterns": [
         // Non Text Files Setting
         "*.jpg",
         "*.jpeg",
@@ -141,5 +121,5 @@
         ".DS_Store",
         "*.class",
         "*.sublime-workspace"
-    ],
+    ]
 }
