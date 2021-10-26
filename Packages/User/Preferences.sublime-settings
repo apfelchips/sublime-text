@@ -28,16 +28,10 @@
     "jsoncomma_on_save": true,
     "ignored_packages": [
         "All Autocomplete",
-        "Color Highlight",
         "FuzzyFilePath",
-        "HexViewer",
-        "PackageResourceViewer",
+        "JSX",
         "ScopeHunter",
-        "Swift",
-        "Terminus",
-        "Vue Syntax Highlight",
     ],
-
     // "auto_complete_selector": "meta.tag - punctuation.definition.tag.begin, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
     // "auto_complete_triggers": [
     // {
