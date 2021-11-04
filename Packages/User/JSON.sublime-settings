@@ -10,7 +10,8 @@
 		"sublime-build",
 		".prettierrc",
 		"json5",
-		"sublime-project-template"
+		"sublime-project-template",
+		"code-workspace",
 	],
-	"word_wrap": "false"
+	"word_wrap": "false",
 }

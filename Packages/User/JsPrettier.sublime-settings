@@ -149,7 +149,7 @@
     // JsPrettier command is available for use across all Sublime Text syntaxes.
     // ----------------------------------------------------------------------
 
-    "allow_inline_formatting": true,
+    "allow_inline_formatting": false,
 
     // ----------------------------------------------------------------------
     // Custom File Extensions
@@ -167,7 +167,7 @@
     // Additional file extensions MUST be specified here, and without the leading dot.
     // ----------------------------------------------------------------------
 
-    "custom_file_extensions": ["twig", "html.twig"],
+    "custom_file_extensions": [],
 
     // ----------------------------------------------------------------------
     // Maximum File Size Limit
@@ -285,7 +285,7 @@
         // Fit code within this line limit.
         // --------------------------------------------------------------------
 
-        "printWidth": 80,
+        "printWidth": 200,
 
         // --------------------------------------------------------------------
         // tabWidth
@@ -347,17 +347,18 @@
         "bracketSpacing": true,
 
         // --------------------------------------------------------------------
-        // jsxBracketSameLine
+        // bracketSameLine
         // --------------------------------------------------------------------
         //
-        // @param {bool} "prettier_options.jsxBracketSameLine"
+        // @param {bool} "prettier_options.bracketSameLine"
         // @default false
         //
-        // If true, puts the `>` of a multi-line jsx element at the end of
-        // the last line instead of being alone on the next line.
+        // Put the `>` of a multi-line HTML (HTML, JSX, Vue, Angular) element
+        // at the end of the last line instead of being alone on the next line
+        // (does not apply to self closing elements).
         // --------------------------------------------------------------------
 
-        "jsxBracketSameLine": false,
+        "bracketSameLine": false,
 
         // --------------------------------------------------------------------
         // jsxSingleQuote

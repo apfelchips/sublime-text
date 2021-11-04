@@ -24,7 +24,8 @@
 
     "vintage_use_clipboard": true,
     "jsoncomma_on_save": true,
-    "ignored_packages": ["All Autocomplete"],
+    "ignored_packages": [
+    ],
 
     "folder_exclude_patterns": [
         ".svn",
@@ -121,5 +122,5 @@
         ".DS_Store",
         "*.class",
         "*.sublime-workspace"
-    ]
+    ],
 }
