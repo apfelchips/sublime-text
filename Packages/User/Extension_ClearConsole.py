@@ -1,5 +1,8 @@
 # src: https://github.com/sublimehq/sublime_text/issues/299#issuecomment-757427207
 
+import sublime
+import sublime_plugin
+
 class ClearConsoleCommand(sublime_plugin.WindowCommand):
     def run(self):
         a = sublime.load_settings("Preferences.sublime-settings")

@@ -24,8 +24,6 @@
 
     "vintage_use_clipboard": true,
     "jsoncomma_on_save": true,
-    "ignored_packages": [
-    ],
 
     "folder_exclude_patterns": [
         ".svn",
@@ -122,5 +120,18 @@
         ".DS_Store",
         "*.class",
         "*.sublime-workspace"
+    ],
+    "interesting_packages": [
+        "HexViewer",
+        "FuzzyFilePath",
+        "Search in Project",
+        "ActivityWatch Watcher",
+        "All Autocomplete",
+        "PlainTasks",
+        "GitSavvy"
+    ],
+    "ignored_packages":
+    [
+        "PackageResourceViewer",
     ],
 }
