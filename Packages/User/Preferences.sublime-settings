@@ -132,6 +132,6 @@
     ],
     "ignored_packages":
     [
-        "PackageResourceViewer",
+        "PackageResourceViewer"
     ],
 }

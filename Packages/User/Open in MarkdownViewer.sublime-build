@@ -20,6 +20,8 @@
     },
     "windows":
     {
-        "cmd": ["cmd.exe","/C","%userprofile%\\Applications\\mdview\\mdview.exe", "$file"] // https://github.com/michelolvera/vs-ghostwriter/releases
+
+        "shell_cmd": "\"%userprofile%\\Applications\\mdview\\mdview.exe\" \"$file\""
+        //"cmd": ["cmd.exe","/C","%userprofile%\\Applications\\mdview\\mdview.exe", "$file"] // https://github.com/michelolvera/vs-ghostwriter/releases
     }
 }

@@ -18,7 +18,6 @@
     },
      "windows":
     {
-        "cmd": ["cmd.exe","/C","","C:\\PROGRA~1\\MOZILL~1\\firefox.exe", "$file"]
-        // "cmd": ["cmd.exe","/C","","\"C:\\Programm Files\\Mozilla Firefox\\firefox.exe\"", "\"$file\""]
+        "shell_cmd": "\"%ProgramFiles%\\Mozilla Firefox\\firefox.exe\" \"$file\""
     }
 }
