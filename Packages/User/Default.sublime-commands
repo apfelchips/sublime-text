@@ -37,6 +37,11 @@
     },
 
     {
+        "caption": "Format XML / JSON",
+        "command": "indent_xml"
+    },
+
+    {
         "caption": "Clear Console",
         "command": "clear_console"
     },
