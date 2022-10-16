@@ -1,3 +1,0 @@
-[submodule "phpactor"]
-	path = Packages/bin/phpactor
-	url = git://github.com/phpactor/phpactor.git
