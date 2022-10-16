@@ -35,14 +35,10 @@
         "JSX",
         "LESS",
         "LogViewPlus",
-        "LSP",
-        "LSP-intelephense",
-        "LSP-PowerShellEditorServices",
-	"LSP-pyright",
         "Missing Palette Commands",
         "Non Text Files",
         "Open Folder",
-        "Open in Default Application",
+	    "Open in Default Application",
         "OpenPath",
         "Origami",
         "Package Control",
@@ -68,7 +64,7 @@
         "Undo Close Tab",
         "VBScript",
         "VimL",
-        "Vue Syntax Highlight",
+        "Vue Syntax Highlight"
     ],
     "repositories":
     [
@@ -76,5 +72,5 @@
         "https://github.com/apfelchips/ProjectManager/tree/feature-limit-search-depth",
         "https://github.com/kulack/LogViewPlus",
         "https://github.com/apfelchips/PowerShell"
-    ],
+    ]
 }
