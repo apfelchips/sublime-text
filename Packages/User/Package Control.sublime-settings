@@ -7,6 +7,7 @@
     [
         "AddRemoveFolder",
         "AdvancedNewFile",
+        "Ansible",
         "ApacheConf",
         "AutoHotkey",
         "Autotools",
@@ -33,12 +34,11 @@
         "Jinja2",
         "JsPrettier",
         "JSX",
-        "LESS",
         "LogViewPlus",
         "Missing Palette Commands",
         "Non Text Files",
         "Open Folder",
-	    "Open in Default Application",
+        "Open in Default Application",
         "OpenPath",
         "Origami",
         "Package Control",
@@ -68,7 +68,6 @@
     ],
     "repositories":
     [
-        "https://github.com/apfelchips/PlainTasks",
         "https://github.com/apfelchips/ProjectManager/tree/feature-limit-search-depth",
         "https://github.com/kulack/LogViewPlus",
         "https://github.com/apfelchips/PowerShell"
