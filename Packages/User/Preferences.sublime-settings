@@ -132,5 +132,8 @@
     ],
     "ignored_packages":
     [
+        "ProjectManager",
+        "TOML",
+        "Twig",
     ],
 }
