@@ -6,7 +6,7 @@
     "auto_match_enabled": false,
 
     "font_face": "Meslo LG M DZ for Powerline",
-    "font_size": 12,
+    "font_size": 13,
     "revert_font_size": 13,
     "rulers": [80, 120, 160],
     "fade_fold_buttons": false,
@@ -133,4 +133,5 @@
     "ignored_packages":
     [
     ],
+    "index_files": true,
 }
